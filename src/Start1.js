@@ -5,21 +5,10 @@ import {
 import React, { useState } from 'react'
 
 const Start1 = () => {
-  const [name, setName] = useState('');
-  // state quản lý bắt lỗi
-  const [isNameValid, setIsNameValid] = useState(true);
-
-  const handleOnSubmit = () => {
-    if (!name || name.length < 3) {
-      setIsNameValid(false);
-      return;
-    }
-    setIsNameValid(true);
-    return;
-  }
+  
   return (
     <View style={styles.container}>
-      <View>
+      <View style={styles.vongtron}>
         <Image
           style={styles.logo}
           source={require('../assets/shoppe.png')} />
@@ -39,8 +28,8 @@ const Start1 = () => {
           <Text style={styles.buttonGGLabel}>Let's get started</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.loginContainer}>
-        <Text style={styles.login}>I already have an account  </Text>
+      <View style={styles.loginContainer1}>
+        <Text style={styles.login1}>I already have an account  </Text>
         <Image
           style={styles.ggImage}
           source={require('../assets/arrow-right-button.png')}
@@ -53,9 +42,12 @@ const Start1 = () => {
 export default Start1
 const styles = StyleSheet.create({
 
+  vongtron:{
+
+  },
   ggImage: {
     position: 'absolute',
-    right: 25, // Đặt giá trị right tại đây
+    right: 40, // Đặt giá trị right tại đây
     top: 19,
   },
 
@@ -101,7 +93,20 @@ const styles = StyleSheet.create({
   },
   
 
-
+  login1: {
+    fontSize: 15,
+    fontStyle: 'normal',
+    fontWeight: '300',
+    lineHeight: 33,
+    textAlign: 'center',
+    letterSpacing: 0.5,
+    color: '#202020',
+    padding:18,
+  },
+  loginContainer1: {
+    marginTop: 1,
+    width:'100%'
+  },
 
   login: {
     fontSize: 19,
