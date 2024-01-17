@@ -8,6 +8,18 @@ const Start1 = () => {
   
   return (
     <View style={styles.container}>
+      <View style={styles.buttonimg}>
+        {/* <Image 
+        
+        source={require('../assets/bubble01.png')}
+        />
+      </View>
+      <View style={[styles.buttonimg,{zIndex:-1}]}>
+        <Image 
+        
+        source={require('../assets/bubble02.png')}
+        /> */}
+      </View>  
       <View style={styles.vongtron}>
         <Image
           style={styles.logo}
@@ -42,6 +54,12 @@ const Start1 = () => {
 export default Start1
 const styles = StyleSheet.create({
 
+
+  buttonimg:{
+position:'absolute',
+left:0,
+top:0
+  },
   vongtron:{
 
   },
