@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity, Button, FlatList, ScrollView } from 'react-native'
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const Profile_1 = () => {
@@ -47,13 +47,7 @@ const Profile_1 = () => {
                 </View>
                 <View>
                     <Text style={styles.txt_tilte_rv}>Recently viewed</Text>
-                    <ScrollView
-                    horizontal={true}>
-                     <TouchableOpacity style={[styles.img_avt, styles.btn_avt]}>
-                        <Image style={styles.img_avt} source={require('../assets/image/img_avt2.jpg')}></Image>
-                    </TouchableOpacity>
-
-                    </ScrollView>
+                    
                 </View>
             </View>
         </View>
