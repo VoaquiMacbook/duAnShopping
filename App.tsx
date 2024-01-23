@@ -25,7 +25,6 @@ function App(): React.JSX.Element {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#EFEFEF',
     width: '100%',
     height: '100%',
   },
