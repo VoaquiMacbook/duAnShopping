@@ -28,10 +28,10 @@ const Password_recovery = () => {
             </View>
             <View style={styles.welcomeContainer}>
 
-                <Text style={styles.welcome}>Hello, Romina!! </Text>
+                <Text style={styles.welcome}>Password Recovery </Text>
             </View>
             <View style={styles.loginContainer}>
-                <Text style={styles.login}>Type your password</Text>
+                <Text style={styles.login}>How you would like to restore your password?</Text>
 
             </View>
 
@@ -63,27 +63,82 @@ const Password_recovery = () => {
                 </View>
             </View> */}
             <View style={styles.checkcontainer}>
-                <Text style={styles.checktxt}>SMS </Text>
+                <View></View>
+                <View><Text style={styles.checktxt}>SMS </Text></View>
+                <View>
                 <Image
                     style={styles.eyeIcon}
                     source={require('../assets/Check.png')}
                 />
+                </View>
+               
+            </View>
+            <View style={styles.checkcontainer1}>
+                <View></View>
+                <View><Text style={styles.checktxt1}>EMAIL </Text></View>
+                <View>
+                <Image
+                    style={styles.eyeIcon}
+                    source={require('../assets/Check.png')}
+                />
+                </View>
+               
             </View>
 
 
+            <View style={styles.buttonGGContainer}>
+                <TouchableOpacity style={styles.buttonGG}>
+
+                    <Text style={styles.buttonGGLabel}
+                    
+                    >Next </Text>
+                </TouchableOpacity>
+            </View>
             <View style={styles.loginContainer1}>
+                <Text style={styles.login1}>Cancel  </Text>
+             
+            </View>
+            {/* <View style={styles.loginContainer1}>
                 <Text style={styles.login1}>Not you?  </Text>
                 <Image
                     style={styles.ggImage}
                     source={require('../assets/arrow-right-button.png')}
                 />
-            </View>
+            </View> */}
 
         </View>
     )
 }
 export default Password_recovery
 const styles = StyleSheet.create({
+    checktxt1: {
+        fontSize: 15,
+        fontStyle: 'normal',
+        fontWeight: '700',
+        lineHeight: 19,
+        letterSpacing: 0.5,
+        color: '#000',
+        
+    },
+    checkcontainer1:{
+        width:'50%',
+        borderWidth: 0.5,
+        borderColor: 'gray',
+       
+        backgroundColor: '#FFEBEB',
+        paddingVertical: 10,
+        paddingHorizontal: 30,
+        gap: 5,
+        borderRadius: 10,
+        justifyContent:"space-between",
+        alignItems:'',
+        flexDirection:'row',
+        marginBottom:150,
+        marginTop:10,
+        
+        
+        
+    },
     checktxt: {
         fontSize: 15,
         fontStyle: 'normal',
@@ -91,23 +146,29 @@ const styles = StyleSheet.create({
         lineHeight: 19,
         letterSpacing: 0.5,
         color: 'blue',
+        
     },
     checkcontainer:{
-        width:'40%',
+        width:'50%',
         borderWidth: 0.5,
         borderColor: 'gray',
-        borderRadius: 8,
+       marginTop:10,
         backgroundColor: '#E5EBFC',
-        paddingVertical: 11,
-        paddingHorizontal: 17,
-        gap: 6,
+        paddingVertical: 10,
+        paddingHorizontal: 30,
+        gap: 5,
         borderRadius: 10,
-        margin: 3,
+        justifyContent:"space-between",
+        alignItems:'',
+        flexDirection:'row',
+        
+        
+        
     },
     eyeIcon: {
         position: 'absolute',
-        right: '35%',
-        top: 10,
+       
+       
     },
     eyeIcon1: {
         position: 'absolute',
@@ -219,7 +280,7 @@ const styles = StyleSheet.create({
         padding: 18,
     },
     loginContainer1: {
-        marginTop: '50%',
+       
         width: '100%'
     },
 
@@ -236,7 +297,7 @@ const styles = StyleSheet.create({
     },
     loginContainer: {
         marginTop: 16,
-        width: '100%',
+        width: '80%',
         justifyContent: 'center',
         alignItems: 'center'
     },

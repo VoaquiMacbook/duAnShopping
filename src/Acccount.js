@@ -42,7 +42,7 @@ const Acccount = () => {
 
             <View style={styles.inputContainer}>
                 <TextInput
-                    style={[styles.input,styles.password]}
+                    style={[styles.input, styles.password]}
                     placeholder='Email'
                 />
             </View>
@@ -62,22 +62,25 @@ const Acccount = () => {
                     <Text style={styles.errorText}>Password is not true. Try Again!</Text>
                 )}
             </View>
-            <View style={[styles.inputContainer1]}>
-               
-          
-                <TextInput
-                    style={[styles.input1]}
-                    placeholder='Number'
-                    keyboardType='numeric'
-                    secureTextEntry={false}
-                   
-                  
-                />
-               
-               <Image
+            <View style={styles.inputContainer1}>
+
+
+            <Image
                     style={styles.eyeIcon1}
                     source={require('../assets/eye.png')}
                 />
+                
+                <Image
+                    style={styles.eyeIcon1}
+                    source={require('../assets/eye.png')}
+                />
+                <TextInput
+                    style={styles.input1}
+                    placeholder='Number'
+                    keyboardType='numeric'
+                    secureTextEntry={false}
+                />
+
             </View>
 
 
@@ -109,9 +112,7 @@ const styles = StyleSheet.create({
         top: 20,
     },
     eyeIcon1: {
-        position: 'absolute',
-        left: 17,
-        top: 20,
+        
     },
     password: {
         marginTop: 32,
@@ -135,27 +136,32 @@ const styles = StyleSheet.create({
         paddingVertical: 11,
         paddingHorizontal: 17,
         marginTop: 8,
-      borderRadius:60,
+        borderRadius: 60,
     },
     input1: {
         width: '100%',
+       
+      
+       
+
+       
+    },
+    inputContainer: {
+        width: '100%',
+
+    },
+    inputContainer1: {
+        width: '100%',
+        marginTop: 8,
         height: 48,
         borderWidth: 0.5,
         borderColor: 'gray',
         borderRadius: 8,
         backgroundColor: '#fff',
-        paddingVertical: 11,
+       alignItems:'center',
         paddingHorizontal: 17,
-        marginTop: 8,
-      
-      borderRadius:60,
-    },
-    inputContainer: {
-        width: '100%',
-       
-    },
-    inputContainer1: {
-        width: '100%',
+        flexDirection:'row',
+        borderRadius: 60,
     },
     buttonimg: {
         position: 'absolute',
@@ -269,7 +275,7 @@ const styles = StyleSheet.create({
         width: 55,
         height: 50,
         marginTop: 82,
-        left:20,
+        left: 20,
         resizeMode: 'contain',
     },
 

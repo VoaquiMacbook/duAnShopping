@@ -26,10 +26,10 @@ function App(): React.JSX.Element {
       <View>
 
       </View>
-<Password_recovery></Password_recovery>
+{/* <Password_recovery></Password_recovery> */}
       {/* <Password_1></Password_1> */}
       {/* <Login></Login> */}
-{/* <Acccount></Acccount> */}
+<Acccount></Acccount>
 {/* <Start1></Start1> */}
 
 
