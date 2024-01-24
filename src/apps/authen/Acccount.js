@@ -5,7 +5,7 @@ import {
 import React, { useState } from 'react'
 
 const Acccount = () => {
-
+   
     return (
         <View style={styles.container}>
             <View style={styles.buttonimg}>
@@ -40,22 +40,22 @@ const Acccount = () => {
                     style={[styles.input]}
                     placeholder='Password'
                     secureTextEntry={true}
-
+                    
                 />
                 <Image
                     style={styles.eyeIcon}
                     source={require('../../../../../assets/image/eyeAcc.png')}
                 />
-
+               
             </View>
             <View style={styles.inputContainer1}>
 
 
-                <Image
+            <Image
                     style={styles.eyeIcon1}
                     source={require('../../../../../assets/image/England.png')}
                 />
-
+                
                 <Image
                     style={styles.eyeIcon1}
                     source={require('../../../../../assets/image/arrowAcc.png')}
@@ -75,7 +75,7 @@ const Acccount = () => {
                 <TouchableOpacity style={styles.buttonGG}>
 
                     <Text style={styles.buttonGGLabel}
-
+                      
                     >Done </Text>
                 </TouchableOpacity>
             </View>
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
         top: 20,
     },
     eyeIcon1: {
-        margin: 5,
+        margin:5,
     },
     password: {
         marginTop: 32,
@@ -126,8 +126,8 @@ const styles = StyleSheet.create({
     },
     input1: {
         width: '100%',
-        paddingLeft: 20,
-
+        paddingLeft:20,
+       
     },
     inputContainer: {
         width: '100%',
@@ -138,12 +138,12 @@ const styles = StyleSheet.create({
         marginTop: 8,
         height: 48,
         // borderWidth: 0.5,
-
+       
         borderRadius: 8,
         backgroundColor: '#f8f8f8',
-        alignItems: 'center',
+       alignItems:'center',
         paddingHorizontal: 17,
-        flexDirection: 'row',
+        flexDirection:'row',
         borderRadius: 60,
     },
     buttonimg: {
@@ -157,8 +157,8 @@ const styles = StyleSheet.create({
         top: 0
     },
     vongtron: {
-        paddingLeft: 10,
-        marginTop: '10%'
+paddingLeft:10,
+marginTop:'10%'
     },
     ggImage: {
         position: 'absolute',
@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         letterSpacing: 0.5,
         color: '#202020',
-
+        
     },
     loginContainer1: {
         marginTop: 18,
@@ -249,7 +249,7 @@ const styles = StyleSheet.create({
         lineHeight: 52, // Sửa giá trị lineHeight tại đây
         letterSpacing: 0.5,
         color: '#202020',
-        padding: 10,
+        padding:10,
         // marginTop: 45,
     },
 
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
     logo: {
         width: 90,
         height: 90,
-
+      
         resizeMode: 'contain',
     },
 
