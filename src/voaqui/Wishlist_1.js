@@ -1,6 +1,8 @@
-import { View, Text, StyleSheet, TouchableOpacity, 
-    Image, SafeAreaView, ScrollView, FlatList, Button } from 'react-native'
-import React, {useState} from 'react'
+import {
+    View, Text, StyleSheet, TouchableOpacity,
+    Image, SafeAreaView, ScrollView, FlatList, Button
+} from 'react-native'
+import React, { useState } from 'react'
 
 const Wishlist_1 = () => {
     // dữ liệu mẫu testing
@@ -112,23 +114,34 @@ const Wishlist_1 = () => {
     }]
     const renderItem = ({ item }) => (
         <View style={styles.item}>
-            <View >
-                <Image
-                    style={styles.avt_container}
-                    source={{ uri: item.photo }}/>
+            <View style={styles.avt_container}>
+                <Image source={{ uri: item.photo }} />
+                <TouchableOpacity style={styles.btn_delete_wish}>
+                    <Image source={require('../../assets/image/ic_delete_wish.png')} />
+                </TouchableOpacity>
             </View>
+
             <View style={styles.txt_container_item}>
-                <Text style={styles.txt_itemM} >{item.name}</Text>
                 <Text style={styles.txt_item}>{item.postion}</Text>
                 <Text style={styles.txt_itemM}>{item.rice}</Text>
                 <View style={styles.horizontal}>
-                        <Text>hello</Text>
-                        <Text>hello</Text>
+                    <View>
+                        <TouchableOpacity style={styles.btn_or}>
+                            <Text style={styles.btn_text_or}>Pink</Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View>
+                        <TouchableOpacity style={styles.btn_or}>
+                            <Text style={styles.btn_text_or}>M</Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{ flex: 1, marginHorizontal: '30%' }}>
+                        <TouchableOpacity>
+                            <Image source={require('../../assets/image/ic_Add_wish.png')} />
+                        </TouchableOpacity>
+                    </View>
                 </View>
             </View>
-           
-
-
         </View>
     );
     return (
@@ -140,29 +153,29 @@ const Wishlist_1 = () => {
                     <Image source={require('../../assets/image/ic_seemess.png')}></Image>
                 </TouchableOpacity>
             </View>
-            <SafeAreaView style={styles.container}>
-                    <ScrollView
-                        horizontal={true}
-                        showsVerticalScrollIndicator={false}
-                        showsHorizontalScrollIndicator={false}
-                        style={styles.scrollView}>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv5.png')} /></TouchableOpacity>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv1.png')} /></TouchableOpacity>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv2.png')} /></TouchableOpacity>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv3.png')} /></TouchableOpacity>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv4.png')} /></TouchableOpacity>
-                    </ScrollView>
-                </SafeAreaView>
-                <View>
-                    <FlatList
-                        horizontal={false}
-                        showsVerticalScrollIndicator={false}
-                        showsHorizontalScrollIndicator={false}
-                        data={USERS}
-                        keyExtractor={(item) => item.id.toString()}
-                        renderItem={renderItem}
-                    />
-                </View>
+            <SafeAreaView style={styles.scrollView}>
+                <ScrollView
+                    horizontal={true}
+                    showsVerticalScrollIndicator={false}
+                    showsHorizontalScrollIndicator={false}
+                >
+                    <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv5.png')} /></TouchableOpacity>
+                    <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv1.png')} /></TouchableOpacity>
+                    <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv2.png')} /></TouchableOpacity>
+                    <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv3.png')} /></TouchableOpacity>
+                    <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv4.png')} /></TouchableOpacity>
+                </ScrollView>
+            </SafeAreaView>
+            <View>
+                <FlatList
+                    horizontal={false}
+                    showsVerticalScrollIndicator={false}
+                    showsHorizontalScrollIndicator={false}
+                    data={USERS}
+                    keyExtractor={(item) => item.id.toString()}
+                    renderItem={renderItem}
+                />
+            </View>
         </View>
     )
 }
@@ -171,20 +184,18 @@ export default Wishlist_1
 const styles = StyleSheet.create({
     // container
     container: {
-        paddingStart: '3%',
+        paddingStart: '4%',
         paddingEnd: '3%',
-        marginTop: '5%'
     },
     // custom tilte
     txt_tilte: {
-        fontSize: 32,
-        lineHeight: 80,
-        fontWeight: '700',
-        fontFamily: 'raleway',
-        color: '#202020',
+        fontSize: 28,
+        lineHeight: 60,
+        fontFamily: 'Raleway-BoldItalic',
+        color: 'black',
     },
-     // cloumn, row
-     vertical: {
+    // cloumn, row
+    vertical: {
         flexDirection: 'column',
     },
     horizontal: {
@@ -194,31 +205,33 @@ const styles = StyleSheet.create({
     flex: {
         flex: 1,
     },
-     // custom see all
-     txt_seeall: {
+    // custom see all
+    txt_seeall: {
         fontStyle: 'italic',
         fontWeight: '500',
         fontSize: 16,
         paddingTop: '1%',
-        color:'black'
+        color: 'black'
     },
     horizontal_seeall: {
         flexDirection: 'row',
     },
     txt_newItems: {
-        fontWeight: '700',
-        fontSize: 20,
-        color:'black'
+        fontSize: 21,
+        color: 'black',
+        fontFamily:'Raleway-Bold',
     },
     // custom scrollView
     scrollView: {
-
+        paddingEnd: '3%',
+        marginTop: '4%',
+        paddingBottom:'2%'
     },
     text: {
         fontSize: 42,
     },
     scv_btn: {
-        marginEnd: 10,
+        marginEnd: 13,
     },
     scv_img: {
         width: 50,
@@ -235,33 +248,52 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowOffset: 10,
     },
-     // custom New Items
-     avt_container: {
+    // custom New Items
+    avt_container: {
         borderRadius: 5,
         backgroundColor: 'gray',
-        width: 100,
-        height: 100,
+        width: 121.18,
+        height: 101.64,
+        marginEnd: 10,
     },
     item: {
         flexDirection: 'row',
-        alignItems: 'center',
-        padding: 16,
-        borderBottomWidth: 1,
-        borderBottomColor: '#ccc',
+        paddingBottom: 10,
+        paddingTop: 10,
     },
-    txt_item:{
-        fontSize: 10, 
-        width: 100, 
-        textAlign: 'center', 
-        color:'black',
+    txt_item: {
+        fontSize: 10,
+        width: 100,
+        height: 30,
+        marginBottom: 10,
+        color: 'black',
     },
-    txt_itemM:{
-        color:'black', 
+    txt_itemM: {
+        color: 'black',
+        fontWeight: 'bold'
     },
-    txt_container_item:{
-        width: '80%', 
-        alignItems: 'center', 
+    txt_container_item: {
+        width: '80%',
         height: 50,
+
+    },
+    // custom whishlist
+    btn_or: {
+        backgroundColor: '#E5EBFC',
+        height: 25,
+        width: 50,
+        borderRadius: 5,
+        justifyContent: 'center',
+        marginTop: 10,
+        marginEnd: 5,
+    },
+    btn_text_or: {
+        color: 'black',
+        textAlign: 'center',
+    },
+    btn_delete_wish:{
+        marginVertical:'48%', 
+        marginHorizontal:'8%',
     }
 
 })
