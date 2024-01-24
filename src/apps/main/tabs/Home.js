@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TextInput,  Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const Shop = () => {
+const Home = () => {
   return (
     <View style={styles.container}>
      <View style={styles.header}>
@@ -10,16 +10,24 @@ const Shop = () => {
    <TextInput style={styles.searchText} placeholder='Search'>
 
    </TextInput>
-  <TouchableOpacity><Image source={ require('../assets/image/camera.png')}/></TouchableOpacity> 
+  <TouchableOpacity><Image source={ require('../../../../assets/image/camera.png')}/></TouchableOpacity> 
+</View>
+
+<View style={styles.typeContainer}>
+
 </View>
      </View>
     </View>
   )
 }
 
-export default Shop
+export default Home
 
 const styles = StyleSheet.create({
+    typeContainer:
+    {
+        
+    },
     searchText:
     {
         flex:1, 

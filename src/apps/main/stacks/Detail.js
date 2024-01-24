@@ -26,18 +26,18 @@ const Detail = () => {
                     <Text style={styles.title}>Color Options</Text>
 
                     <View style={styles.colorContainer}>
-                        <View style={styles.colorItemContainer}>
+                        <TouchableOpacity style={styles.colorItemContainer}>
                             <Image style={styles.colorItem} source={require('../../../../assets/image/pinkDetail.png')} />
-                        </View>
-                        <View style={styles.colorItemContainer}>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.colorItemContainer}>
                             <Image style={styles.colorItem} source={require('../../../../assets/image/yellowDetail.png')} />
-                        </View>
-                        <View style={styles.colorItemContainer}>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.colorItemContainer}>
                             <Image style={styles.colorItem} source={require('../../../../assets/image/redDetail.png')} />
-                        </View>
-                        <View style={styles.colorItemContainer}>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.colorItemContainer}>
                             <Image style={styles.colorItem} source={require('../../../../assets/image/purpleDetail.png')} />
-                        </View>
+                        </TouchableOpacity>
 
                     </View>
 
@@ -70,13 +70,20 @@ const Detail = () => {
                        <View style={styles.plusDecre}>
                        <TouchableOpacity style={styles.btnValue}><Image source={require('../../../../assets/image/minus.png')} /></TouchableOpacity>
                         <View style={styles.inputContainer}>
-                            <Text  style={styles.inputText}>1
+                            <Text  style={styles.inputText}>
+                                1
                             </Text> 
                             
                             
                             </View>
                         <TouchableOpacity style={styles.btnValue}><Image source={require('../../../../assets/image/incre.png')}  /></TouchableOpacity>
                        </View>
+                    </View>
+
+                    <View style={styles.footer}>
+                    <TouchableOpacity style={styles.like}><Image source={require('../../../../assets/image/unlike.png')}/></TouchableOpacity>
+                    <TouchableOpacity style={styles.addToCart}><Text style={styles.textCart}>Add To Cart</Text></TouchableOpacity>
+                    <TouchableOpacity  style={styles.buy}><Text style={styles.textCart}>Buy Now</Text></TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -91,24 +98,67 @@ const Detail = () => {
 export default Detail
 
 const styles = StyleSheet.create({
+    buy:
+    {
+        backgroundColor:'#004CFF',
+        width:128,
+        height:40,
+        alignItems:'center',
+        borderRadius:11,
+        justifyContent:'center',
+
+    },
+    textCart:
+    {
+        color:'white'
+    },
+    addToCart:
+    {
+        backgroundColor:'#202020',
+        width:128,
+        height:40,
+        alignItems:'center',
+        borderRadius:11,
+        justifyContent:'center',
+
+    },
+    like:
+    {
+        backgroundColor:'#F9F9F9',
+        alignItems:'center',
+        justifyContent:'center',
+        width:47,
+        borderRadius:11,
+        height:40,
+    },
+    footer:
+    {
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+
+    },
     inputText:
     {
-        
-       
+     
+      fontFamily:'Raleway-Medium',
+      fontSize:29,
+      color:'#1A3168'
+    
     },
     inputContainer:
     {
         alignItems:'center',
-        justifyContent:'center',
-        backgroundColor:'#E5EBFC',
+       
+        backgroundColor:'#E5EBFC', 
         width:74,
-        flex:1,
         height:50,
         borderRadius:16,
         marginHorizontal:10
     },
     plusDecre:
     {
+      
         flexDirection:'row'
     },
     titleQuantily:
@@ -116,7 +166,6 @@ const styles = StyleSheet.create({
         fontFamily: 'Raleway-Bold',
         fontSize: 17,
         lineHeight: 21,
-       
         color: 'black',
 
 
@@ -136,7 +185,7 @@ const styles = StyleSheet.create({
         alignItems:'center',
         justifyContent:'space-between',
         flexDirection: 'row',
-        marginTop: 14
+        marginVertical: 14
     },
     textSizeDiable:
     {
