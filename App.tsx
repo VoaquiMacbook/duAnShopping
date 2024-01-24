@@ -9,14 +9,14 @@ import {
   View,
   useColorScheme,
 } from 'react-native';
+import Shop from './src/an/Shop';
 import FlashSale from './src/an/FlashSale';
 
 function App(): React.JSX.Element {
 
   return (
-    <SafeAreaView >
-      <FlashSale />
-      <Text></Text>
+    <SafeAreaView style={{flex:1}}>
+     <Shop/>
     </SafeAreaView>
   );
 }
