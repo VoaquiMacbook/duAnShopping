@@ -13,13 +13,16 @@ import {
 } from 'react-native';
 import Shop from './src/apps/main/tabs/Home';
 
+// import voaqui
+import Profile from './src/apps/main/tabs/Profile';
+
 
 
 function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-   <Detail/>
+      <Profile/>
     </SafeAreaView>
   );
 }
