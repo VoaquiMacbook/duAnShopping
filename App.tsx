@@ -12,13 +12,14 @@ import {
   useColorScheme,
 } from 'react-native';
 import Shop from './src/apps/main/tabs/Home';
-import FlashSale from './src/an/FlashSale';
+
+
 
 function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-     <Home/>
+   <Detail/>
     </SafeAreaView>
   );
 }
