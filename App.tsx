@@ -12,12 +12,15 @@ import {
 } from 'react-native';
 import Shop from './src/an/Shop';
 import FlashSale from './src/an/FlashSale';
-
+import Start1 from './src/apps/main/stacks/authen/Start1';
+import Password from './src/apps/main/stacks/authen/Password';
+import Login from './src/apps/main/stacks/authen/Login';
+import Acccount from './src/apps/main/stacks/authen/Acccount';
 function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-     <Detail/>
+    <Acccount></Acccount>
     </SafeAreaView>
   );
 }

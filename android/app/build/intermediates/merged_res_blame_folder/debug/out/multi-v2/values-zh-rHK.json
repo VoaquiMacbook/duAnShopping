@@ -4,7 +4,7 @@
             "outputFile": "com.duanshopping.app-mergeDebugResources-26:/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Nhat An\\.gradle\\caches\\transforms-3\\b3627ca143232ec2ceb6e319eb18971d\\transformed\\appcompat-1.6.1\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "source": "C:\\Users\\ngoth\\.gradle\\caches\\transforms-3\\b3627ca143232ec2ceb6e319eb18971d\\transformed\\appcompat-1.6.1\\res\\values-zh-rHK\\values-zh-rHK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Nhat An\\.gradle\\caches\\transforms-3\\13659b94c66de92d98d7f8af61234b95\\transformed\\core-1.9.0\\res\\values-zh-rHK\\values-zh-rHK.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "53",
-                        "startColumns": "4",
-                        "startOffsets": "4414",
-                        "endColumns": "100",
-                        "endOffsets": "4510"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Nhat An\\.gradle\\caches\\transforms-3\\d10d040f6dc36d35e250d48d5ebb15bd\\transformed\\jetified-react-android-0.73.2-debug\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "source": "C:\\Users\\ngoth\\.gradle\\caches\\transforms-3\\d10d040f6dc36d35e250d48d5ebb15bd\\transformed\\jetified-react-android-0.73.2-debug\\res\\values-zh-rHK\\values-zh-rHK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2666,2732,2828,2911,2983,3050,3116,3191,3256,3321,3390,3461,3534,3609,3676,3825,3898,3970,4047,4123,4195,4265,4334,4515,4583,4653,4720",
                         "endColumns": "65,95,82,71,66,65,74,64,64,68,70,72,74,66,69,72,71,76,75,71,69,68,79,67,69,66,68",
                         "endOffsets": "2727,2823,2906,2978,3045,3111,3186,3251,3316,3385,3456,3529,3604,3671,3741,3893,3965,4042,4118,4190,4260,4329,4409,4578,4648,4715,4784"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ngoth\\.gradle\\caches\\transforms-3\\13659b94c66de92d98d7f8af61234b95\\transformed\\core-1.9.0\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "53",
+                        "startColumns": "4",
+                        "startOffsets": "4414",
+                        "endColumns": "100",
+                        "endOffsets": "4510"
                     }
                 }
             ]
