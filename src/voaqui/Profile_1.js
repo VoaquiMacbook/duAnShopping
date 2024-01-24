@@ -212,7 +212,7 @@ const Profile_1 = () => {
                 <View style={[styles.horizontal_seeall]}>
                     <Text style={[styles.txt_newItems, styles.flex]}>New Items</Text>
                     <Text style={styles.txt_seeall}>See All</Text>
-                    <TouchableOpacity style={{ marginStart: 10, marginEnd:5, shadowOpacity:40, width:'10%'}}>
+                    <TouchableOpacity style={{ marginStart: 10, marginEnd:5, shadowOpacity:0.3, width:'10%'}}>
                         <Image source={require('../../assets/image/ic_seemess.png')}></Image>
                     </TouchableOpacity>
                 </View>
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginEnd: '3%',
         paddingStart: '1.4%',
-        shadowOpacity: 20,
+        shadowOpacity: 0.3,
         shadowRadius:10,
     },
     btn_avt: {
@@ -291,7 +291,7 @@ const styles = StyleSheet.create({
         marginStart: 10,
         justifyContent: 'center',
         marginVertical: '16%',
-        shadowOpacity: 10,
+        shadowOpacity: 0.3,
         shadowRadius: 10,
     },
     cs_icon: {
@@ -326,7 +326,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         paddingStart: 14,
         paddingTop: 10,
-        shadowOpacity:5,
+        shadowOpacity:0.3,
     },
     txt_thongbao: {
         fontWeight: 'bold',
@@ -363,7 +363,7 @@ const styles = StyleSheet.create({
         borderRadius: 25,
     },
     scv_imgContainer: {
-        backgroundColor: 'F8F8F8',
+        backgroundColor: 'white',
         width: 60,
         height: 60,
         borderRadius: 30,
