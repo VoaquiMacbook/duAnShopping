@@ -121,12 +121,12 @@ const Profile_1 = () => {
                     style={styles.avt_container}
                     source={{ uri: item.photo }}/>
             </View>
-            <View style={{ width: '80%', alignItems: 'center', height: 50 }}>
-                <Text>{item.name}</Text>
-                <Text style={{ fontSize: 10, width: 100, textAlign: 'center' }}>{item.postion}</Text>
+            <View style={styles.txt_container_item}>
+                <Text style={styles.txt_itemM} >{item.name}</Text>
+                <Text style={styles.txt_item}>{item.postion}</Text>
             </View>
 
-            <Text>{item.rice}</Text>
+            <Text style={styles.txt_itemM}>{item.rice}</Text>
 
 
         </View>
@@ -212,7 +212,7 @@ const Profile_1 = () => {
                 <View style={[styles.horizontal_seeall]}>
                     <Text style={[styles.txt_newItems, styles.flex]}>New Items</Text>
                     <Text style={styles.txt_seeall}>See All</Text>
-                    <TouchableOpacity style={{ marginStart: 10 }}>
+                    <TouchableOpacity style={{ marginStart: 10, marginEnd:5, shadowOpacity:40, width:'10%'}}>
                         <Image source={require('../../assets/image/ic_seemess.png')}></Image>
                     </TouchableOpacity>
                 </View>
@@ -237,8 +237,9 @@ export default Profile_1
 const styles = StyleSheet.create({
     // container
     container: {
-        paddingStart: '10%',
-        paddingEnd: '5%',
+        paddingStart: '3%',
+        paddingEnd: '3%',
+        marginTop:'5%'
     },
     // cloumn
     vertical: {
@@ -258,7 +259,8 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginEnd: '3%',
         paddingStart: '1.4%',
-        shadowOpacity: 0.5,
+        shadowOpacity: 20,
+        shadowRadius:10,
     },
     btn_avt: {
         backgroundColor: 'white',
@@ -271,10 +273,10 @@ const styles = StyleSheet.create({
     btn_container: {
         backgroundColor: '#004CFF',
         width: '65%',
-        height: 35,
+        height: 33,
         borderRadius: 20,
         justifyContent: 'center',
-        marginVertical: '4%',
+        marginVertical: '6%',
     },
     txt_myActivity: {
         color: 'white',
@@ -282,15 +284,15 @@ const styles = StyleSheet.create({
     },
     // custom icon
     btn_icon: {
-        backgroundColor: '#F8F8F8',
+        backgroundColor: '#F4F4F4',
         width: 38,
         height: 38,
         borderRadius: 20,
         marginStart: 10,
         justifyContent: 'center',
         marginVertical: '16%',
-        shadowOpacity: 0.2,
-        shadowRadius: 5,
+        shadowOpacity: 10,
+        shadowRadius: 10,
     },
     cs_icon: {
         width: 18,
@@ -310,35 +312,40 @@ const styles = StyleSheet.create({
     },
     // custom tilte
     txt_tilte: {
-        fontSize: 35,
+        fontSize: 32,
         lineHeight: 80,
         fontWeight: '700',
         fontFamily: 'raleway',
+        color:'#202020',
     },
     // custom thongBao
     btn_container_thongbao: {
         width: '100%',
         height: 70,
-        backgroundColor: '#F8F8F8',
+        backgroundColor: '#F4F4F4',
         borderRadius: 10,
         paddingStart: 14,
         paddingTop: 10,
+        shadowOpacity:5,
     },
     txt_thongbao: {
         fontWeight: 'bold',
         fontSize: 14,
+        color:'black',
     },
     txt_thongbaoS: {
         fontSize: 10,
         paddingEnd: '10%',
         paddingTop: '1%',
+        color:'black',
     },
     // custom Recently viewed
     txt_tilte_rv: {
         fontSize: 21,
-        lineHeight: 70,
+        lineHeight: 60,
         fontWeight: '700',
         fontFamily: 'raleway',
+        color:'black',
     },
     // custom scrollView
     scrollView: {
@@ -356,7 +363,7 @@ const styles = StyleSheet.create({
         borderRadius: 25,
     },
     scv_imgContainer: {
-        backgroundColor: 'white',
+        backgroundColor: 'F8F8F8',
         width: 60,
         height: 60,
         borderRadius: 30,
@@ -364,12 +371,12 @@ const styles = StyleSheet.create({
         paddingStart: '1%',
         shadowOpacity: 0.2,
         shadowOffset: 10,
-
     },
     // custom MyOrder
     txt_or: {
         fontWeight: 'bold',
-        fontSize: 20, marginTop: '5%'
+        fontSize: 20, marginTop: '5%',
+        color:'black',
     },
     btn_or: {
         backgroundColor: '#E5EBFC',
@@ -377,7 +384,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         justifyContent: 'center',
         marginVertical: '4%',
-        marginEnd: 5,
+        marginEnd: 15,
         marginTop: 10,
     },
     btn_text_or: {
@@ -390,6 +397,7 @@ const styles = StyleSheet.create({
         fontWeight: '500',
         fontSize: 16,
         paddingTop: '1%',
+        color:'black'
     },
     horizontal_seeall: {
         flexDirection: 'row',
@@ -398,8 +406,9 @@ const styles = StyleSheet.create({
     txt_newItems: {
         fontWeight: '700',
         fontSize: 20,
+        color:'black'
     },
-    // custum avt
+    // custom New Items
     avt_container: {
         borderRadius: 5,
         backgroundColor: 'gray',
@@ -413,6 +422,20 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: '#ccc',
     },
+    txt_item:{
+        fontSize: 10, 
+        width: 100, 
+        textAlign: 'center', 
+        color:'black',
+    },
+    txt_itemM:{
+        color:'black', 
+    },
+    txt_container_item:{
+        width: '80%', 
+        alignItems: 'center', 
+        height: 50,
+    }
 
 
 });

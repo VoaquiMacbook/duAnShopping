@@ -15,6 +15,7 @@ import Shop from './src/apps/main/tabs/Home';
 
 // import voaqui
 import Profile from './src/apps/main/tabs/Profile';
+import Wishlist from './src/apps/main/tabs/Wishlist';
 
 
 
@@ -22,7 +23,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-      <Profile/>
+     <Wishlist/>
     </SafeAreaView>
   );
 }
