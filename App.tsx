@@ -1,5 +1,6 @@
 import React from 'react';
 import type { PropsWithChildren } from 'react';
+import Detail from './src/apps/main/stacks/Detail';
 import {
   SafeAreaView,
   ScrollView,
@@ -16,7 +17,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-     <Shop/>
+     <Detail/>
     </SafeAreaView>
   );
 }
