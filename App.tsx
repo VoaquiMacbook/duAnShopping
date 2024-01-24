@@ -1,6 +1,5 @@
 import React from 'react';
 import type { PropsWithChildren } from 'react';
-import Detail from './src/apps/main/stacks/Detail';
 import {
   SafeAreaView,
   ScrollView,
@@ -10,19 +9,25 @@ import {
   View,
   useColorScheme,
 } from 'react-native';
-import Shop from './src/an/Shop';
-import FlashSale from './src/an/FlashSale';
-
+// voaqui
+import Profile from './src/voaqui/Profile';
 function App(): React.JSX.Element {
 
   return (
-    <SafeAreaView style={{flex:1}}>
-     <Detail/>
+    <SafeAreaView style={styles.container}>
+      <StatusBar />
+      <View>
+        <Profile></Profile>
+      </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    width: '100%',
+    height: '100%',
+  },
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
