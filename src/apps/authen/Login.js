@@ -11,13 +11,13 @@ const Login = () => {
             <View style={styles.buttonimg}>
                 <Image
 
-                    source={require('../../../../../assets/image/bubblePass.png')}
+                    source={require('../../../assets/image/bubblePass.png')}
                 />
             </View>
             <View style={[styles.buttonimg, { zIndex: -1 }]}>
                 <Image
 
-                    source={require('../../../../../assets/image/bubblePass2.png')}
+                    source={require('../../../assets/image/bubblePass2.png')}
                 />
 
             </View>
@@ -30,7 +30,7 @@ const Login = () => {
                 <Text style={styles.login}>Good to see you back!</Text>
                 <Image
                     style={styles.eyeIcon}
-                    source={require('../../../../../assets/image/heart.png')}
+                    source={require('../../../assets/image/heart.png')}
                 />
             </View>
 

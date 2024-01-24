@@ -21,7 +21,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-    <Acccount></Acccount>
+    <Start1></Start1>
     </SafeAreaView>
   );
 }

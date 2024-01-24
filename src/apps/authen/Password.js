@@ -11,20 +11,20 @@ const Password = () => {
             <View style={styles.buttonimg}>
                 <Image
 
-                    source={require('../../../../../assets/image/bubblePass.png')}
+                    source={require(' ../../../assets/image/bubblePass.png')}
                 />
             </View>
             <View style={[styles.buttonimg, { zIndex: -1 }]}>
                 <Image
 
-                    source={require('../../../../../assets/image/bubblePass2.png')}
+                    source={require('../../../assets/image/bubblePass2.png')}
                 />
 
             </View>
             <View style={styles.vongtron}>
                 <Image
                     style={styles.logo}
-                    source={require('../../../../../assets/image/Ava.png')} />
+                    source={require('../../../assets/image/Ava.png')} />
             </View>
             <View style={styles.welcomeContainer}>
 
@@ -69,7 +69,7 @@ const Password = () => {
                 <Text style={styles.login1}>Not you?  </Text>
                 <Image
                     style={styles.ggImage}
-                    source={require('../../../../../assets/image/ButtonStart.png')}
+                    source={require('../../../assets/image/ButtonStart.png')}
                 />
             </View>
 

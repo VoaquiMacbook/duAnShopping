@@ -11,13 +11,13 @@ const Acccount = () => {
             <View style={styles.buttonimg}>
                 <Image
 
-                    source={require('../../../../../assets/image/bubbleAcc2.png')}
+                    source={require('../../../assets/image/bubbleAcc2.png')}
                 />
             </View>
             <View style={[styles.buttonimg1, { zIndex: -1 }]}>
                 <Image
 
-                    source={require('../../../../../assets/image/bubbleAcc.png')}
+                    source={require('../../../assets/image/bubbleAcc.png')}
                 />
             </View>
             <View style={styles.welcomeContainer}>
@@ -26,7 +26,7 @@ const Acccount = () => {
             <View style={styles.vongtron}>
                 <Image
                     style={styles.logo}
-                    source={require('../../../../../assets/image/CameraAcc2.png')} />
+                    source={require('../../../assets/image/CameraAcc2.png')} />
             </View>
 
             <View style={styles.inputContainer}>
@@ -44,7 +44,7 @@ const Acccount = () => {
                 />
                 <Image
                     style={styles.eyeIcon}
-                    source={require('../../../../../assets/image/eyeAcc.png')}
+                    source={require('../../../assets/image/eyeAcc.png')}
                 />
                
             </View>
@@ -53,12 +53,12 @@ const Acccount = () => {
 
             <Image
                     style={styles.eyeIcon1}
-                    source={require('../../../../../assets/image/England.png')}
+                    source={require('../../../assets/image/England.png')}
                 />
                 
                 <Image
                     style={styles.eyeIcon1}
-                    source={require('../../../../../assets/image/arrowAcc.png')}
+                    source={require('../../../assets/image/arrowAcc.png')}
                 />
                 <TextInput
                     style={styles.input1}

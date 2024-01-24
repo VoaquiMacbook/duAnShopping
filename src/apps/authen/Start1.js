@@ -23,7 +23,7 @@ const Start1 = () => {
       <View style={styles.vongtron}>
         <Image
           style={styles.logo}
-          source={require('../../../../../assets/image/Shoppe.png')} />
+          source={require('../../../assets/image/Shoppe.png')} />
       </View>
       <View style={styles.welcomeContainer}>
         <Text style={styles.welcome}>Shoppe </Text>
@@ -44,7 +44,7 @@ const Start1 = () => {
         <Text style={styles.login1}>I already have an account  </Text>
         <Image
           style={styles.ggImage}
-          source={require('../../../../../assets/image/ButtonStart.png')}
+          source={require('../../../assets/image/ButtonStart.png')}
         />
       </View>
 
