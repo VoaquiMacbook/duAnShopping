@@ -69,7 +69,7 @@ const Detail = () => {
                         <Text style={styles.titleQuantily}>Quantily</Text>
                        <View style={styles.plusDecre}>
                        <TouchableOpacity style={styles.btnValue}><Image source={require('../../../../assets/image/minus.png')} /></TouchableOpacity>
-                        <View style><TextInput /></View>
+                        <View style={styles.inputContainer}><TextInput /></View>
                         <TouchableOpacity style={styles.btnValue}><Image source={require('../../../../assets/image/incre.png')}  /></TouchableOpacity>
                        </View>
                     </View>
