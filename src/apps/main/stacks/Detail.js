@@ -69,7 +69,12 @@ const Detail = () => {
                         <Text style={styles.titleQuantily}>Quantily</Text>
                        <View style={styles.plusDecre}>
                        <TouchableOpacity style={styles.btnValue}><Image source={require('../../../../assets/image/minus.png')} /></TouchableOpacity>
-                        <View style={styles.inputContainer}><TextInput /></View>
+                        <View style={styles.inputContainer}>
+                            <Text  style={styles.inputText}>1
+                            </Text> 
+                            
+                            
+                            </View>
                         <TouchableOpacity style={styles.btnValue}><Image source={require('../../../../assets/image/incre.png')}  /></TouchableOpacity>
                        </View>
                     </View>
@@ -86,6 +91,22 @@ const Detail = () => {
 export default Detail
 
 const styles = StyleSheet.create({
+    inputText:
+    {
+        
+       
+    },
+    inputContainer:
+    {
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:'#E5EBFC',
+        width:74,
+        flex:1,
+        height:50,
+        borderRadius:16,
+        marginHorizontal:10
+    },
     plusDecre:
     {
         flexDirection:'row'
