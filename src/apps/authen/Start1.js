@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 5,
     paddingTop: 20,
-
+    marginTop:'20%',
 
   },
   ggImage: {
@@ -153,10 +153,11 @@ const styles = StyleSheet.create({
   },
   loginContainer: {
     marginTop: 16,
-    padding: 43,
+    paddingLeft: 43,
+    paddingRight: 43,
   },
   welcomeContainer: {
-    marginTop: 1,
+    marginTop: 24,
   },
   welcome: {
     fontSize: 52,
@@ -165,7 +166,7 @@ const styles = StyleSheet.create({
     lineHeight: 52, // Sửa giá trị lineHeight tại đây
     letterSpacing: 0.5,
     color: '#202020',
-    marginTop: 45,
+    
   },
 
 
