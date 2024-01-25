@@ -1,7 +1,24 @@
-import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity, FlatList } from 'react-native'
+import React, { useState } from 'react'
 
 const Home = () => {
+    const [data, setdata] = useState(Product);
+    const renderitem = ({ item }) => {
+        const { id, infor, price, image } = item;
+       
+        return (
+            <TouchableOpacity style={styles.pressProduct}>
+                <View>
+                    <View style={styles.imageProContainer}>
+                        <Image style={styles.imageProduct} source={image} />
+                    </View>
+                    <Text numberOfLines={2} style={styles.titleProduct}>{infor} </Text>
+                </View>
+
+                <Text style={styles.price}>$<Text>{price}</Text></Text>
+            </TouchableOpacity>
+        )
+    }
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -100,9 +117,23 @@ const Home = () => {
             <View style={styles.titleAllItem}>
                 <Text style={styles.tilteTextAll}>ALL ITEMS</Text>
                 <TouchableOpacity>
-                    <Image source={require('../../../../assets/image/filter.png')}/>
+                    <Image source={require('../../../../assets/image/filter.png')} />
                 </TouchableOpacity>
             </View>
+
+
+
+            <FlatList
+
+                numColumns={2}
+                showsVerticalScrollIndicator={false}
+                horizontal={false}
+                style={styles.flatlistProduct}
+                data={data}
+                columnWrapperStyle={styles.rowProduct}
+                renderItem={renderitem}
+                keyExtractor={item => item.id}
+            />
         </View>
     )
 }
@@ -110,20 +141,86 @@ const Home = () => {
 export default Home
 
 const styles = StyleSheet.create({
+    rowProduct:
+    {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    flatlistProduct:
+    {
+        flex: 1,
+
+    },
+    price:
+    {
+        fontFamily: 'Raleway-Bold',
+        color: 'black',
+        marginBottom: 10,
+        fontSize: 17,
+
+
+
+        lineHeight: 25,
+
+    },
+    titleProduct:
+    {
+
+        fontSize: 12,
+
+        lineHeight: 16,
+        color: 'black',
+        marginTop: 6,
+
+    },
+    imageProduct:
+    {
+        width: 170,
+        height: 197,
+        borderRadius: 9,
+    },
+    imageProContainer:
+    {
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        shadowColor: '1px 2px 9px #F4AAB9',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        width: '100%',
+        height: 206,
+        borderRadius: 9,
+
+    },
+    pressProduct:
+    {
+
+        flexDirection: 'column',
+        marginBottom: 5,
+        justifyContent: 'space-between',
+        width: 180,
+        height: 275,
+
+    },
+
     tilteTextAll:
     {
         fontFamily: 'Raleway-Bold',
-        color:'#202020',
+        color: '#202020',
         fontSize: 21,
         lineHeight: 30,
-        
+
     },
     titleAllItem:
     {
-        marginTop:25,
-        flexDirection:'row',
-        justifyContent:'space-between',
-        alignItems:'center'
+        marginTop: 25,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 9
     },
     textTilte:
     {
@@ -181,7 +278,7 @@ const styles = StyleSheet.create({
         paddingLeft: 16,
         paddingRight: 17,
         height: 40,
-        backgroundColor: '#EDEEF1', 
+        backgroundColor: '#EDEEF1',
         flex: 1,
         borderRadius: 18,
         marginBottom: 10
@@ -206,6 +303,41 @@ const styles = StyleSheet.create({
     {
         flexDirection: 'column',
         flex: 1,
-        padding: 20
+        paddingVertical: 20,
+        paddingHorizontal: 13
     }
 })
+const Product = [{
+    "id": 1,
+    "infor": "ShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtimeShowtime",
+    "price": "5.05",
+    "image": require("../../../../assets/image/tunic.png")},
+     {
+    "id": 2,
+    "infor": "Sabrina",
+    "price": "9.10",
+    "image": require("../../../../assets/image/purpleDetail.png")},
+     {
+    "id": 3,
+    "infor": "Little Bit of Heaven, A",
+    "price": "9.07",
+    "image": require("../../../../assets/image/shoe.png")},
+     {
+    "id": 4,
+    "infor": "If You Could Only Cook",
+    "price": "9.59",
+    "image": require("../../../../assets/image/girl.png")},
+
+
+{
+    "id": 5,
+    "infor": "Royal Wedding",
+    "price": "7.07",
+    "image": require("../../../../assets/image/glass.png")},
+
+{
+    "id": 6,
+    "infor": "Big Stan",
+    "price": "3.39",
+    "image": require("../../../../assets/image/yellowDetail.png")},
+]
