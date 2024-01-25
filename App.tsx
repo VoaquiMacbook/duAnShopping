@@ -20,7 +20,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-    <Acccount></Acccount>
+    <Password></Password>
     </SafeAreaView>
   );
 }
