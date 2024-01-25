@@ -21,6 +21,7 @@ import Acccount from './src/apps/authen/Acccount';
 // import voaqui
 import Profile from './src/apps/main/tabs/Profile';
 import Wishlist from './src/apps/main/tabs/Wishlist';
+import Cart from './src/apps/main/tabs/Cart';
 
 
 
@@ -28,7 +29,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-    <Profile/>
+    <Cart/>
     </SafeAreaView>
   );
 }
