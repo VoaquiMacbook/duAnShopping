@@ -21,6 +21,19 @@ const Login = () => {
                 />
 
             </View>
+            <View style={styles.buttonimg2}>
+                <Image
+
+                    source={require('../../../assets/image/bubbleLogin2.png')}
+                />
+            </View>
+            <View style={[styles.buttonimg1, { zIndex: -1 }]}>
+                <Image
+
+                    source={require('../../../assets/image/bubbleLogin.png')}
+                />
+
+            </View>
             <View style={styles.welcomeContainer}>
                 <Text style={styles.welcome}>Login </Text>
             </View>
@@ -99,7 +112,12 @@ const styles = StyleSheet.create({
     buttonimg1: {
         position: 'absolute',
         right: 0,
-        top: 0
+        bottom:0,
+    },
+    buttonimg2: {
+        position: 'absolute',
+        right: 0,
+        top:'30%',
     },
     vongtron: {
 
@@ -185,8 +203,9 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
-        backgroundColor: '#fff',
+     
         flexDirection: 'row',
+        
     },
     welcomeContainer: {
         marginTop: '100%',

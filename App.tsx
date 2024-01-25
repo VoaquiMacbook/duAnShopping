@@ -28,7 +28,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-    <Profile/>
+    <Start1/>
     </SafeAreaView>
   );
 }
