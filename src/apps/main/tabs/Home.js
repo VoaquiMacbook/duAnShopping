@@ -257,7 +257,7 @@ const styles = StyleSheet.create({
     },
     typeContainer:
     {
-        marginTop: 13,
+        marginTop: 23,
         flexDirection: 'row',
         justifyContent: 'space-between',
 
@@ -273,6 +273,7 @@ const styles = StyleSheet.create({
     searchContainer:
     {
         flexDirection: 'row',
+        alignSelf:'center',
         alignItems: 'center',
         justifyContent: 'center',
         paddingLeft: 16,
@@ -281,13 +282,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#EDEEF1',
         flex: 1,
         borderRadius: 18,
-        marginBottom: 10
+       
     },
     shopHeader:
     {
         marginRight: 19,
         color: '#202020',
-        lineHeight: 36,
+        textAlign:'center',
+      lineHeight:36,
+        
         fontWeight: 'bold',
         fontSize: 28
     },
@@ -296,7 +299,7 @@ const styles = StyleSheet.create({
 
         alignItems: 'center',
         marginTop: 19,
-
+      
         flexDirection: 'row'
     },
     container:

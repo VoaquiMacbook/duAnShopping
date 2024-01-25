@@ -17,7 +17,7 @@ import Start1 from './src/apps/authen/Start1';
 import Password from './src/apps/authen/Password';
 import Login from './src/apps/authen/Login';
 import Acccount from './src/apps/authen/Acccount';
-
+import Search from './src/apps/main/stacks/Search';
 // import voaqui
 import Profile from './src/apps/main/tabs/Profile';
 import Wishlist from './src/apps/main/tabs/Wishlist';
