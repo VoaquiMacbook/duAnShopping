@@ -1,12 +1,16 @@
 import {
     StyleSheet, Text, View, Image, TextInput,
-    TouchableOpacity
+    TouchableOpacity,
+    KeyboardAvoidingView,
+    ScrollView
 } from 'react-native'
 import React, { useState } from 'react'
 
 const Login = () => {
 
     return (
+       <KeyboardAvoidingView>
+        <ScrollView>
         <View style={styles.container}>
             <View style={styles.buttonimg}>
                 <Image
@@ -73,6 +77,8 @@ const Login = () => {
             </View>
 
         </View>
+        </ScrollView>
+       </KeyboardAvoidingView>
     )
 }
 export default Login
