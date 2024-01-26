@@ -22,14 +22,14 @@ import Search from './src/apps/main/stacks/Search';
 import Profile from './src/apps/main/tabs/Profile';
 import Wishlist from './src/apps/main/tabs/Wishlist';
 import Cart from './src/apps/main/tabs/Cart';
-
+import Setting from './src/apps/main/tabs/Setting';
 
 
 function App(): React.JSX.Element {
 
   return (
-    <SafeAreaView style={{flex:1}}>
-    <Cart/>
+    <SafeAreaView>
+    <Setting/>
     </SafeAreaView>
   );
 }

@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
         paddingEnd: '3%',
         marginTop:'5%'
     },
-    // cloumn
+    // cloumn, row
     vertical: {
         flexDirection: 'column',
     },
