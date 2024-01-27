@@ -232,6 +232,11 @@ import {
     },
     scv_btn: {
         marginEnd: 13,
+        elevation: 2,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        shadowColor: '1px 2px 9px #F4AAB9',
     },
     scv_img: {
         width: 50,
@@ -255,6 +260,14 @@ import {
         width: 121.18,
         height: 101.64,
         marginEnd: 10,
+        shadowOpacity:10,
+        shadowRadius:10,
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        shadowColor: '1px 2px 9px #F4AAB9',
     },
     item: {
         flexDirection: 'row',

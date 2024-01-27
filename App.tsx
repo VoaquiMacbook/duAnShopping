@@ -30,6 +30,8 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaView>
     <Setting/>
+    {/* <Wishlist/> */}
+    {/* <Profile/> */}
     </SafeAreaView>
   );
 }

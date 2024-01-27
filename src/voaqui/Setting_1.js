@@ -4,7 +4,7 @@ import React from 'react'
 const Setting_1 = () => {
     return (
         <SafeAreaView style={styles.container}>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false} >
                 <Text style={styles.txt_tilte}>Settings</Text>
                 <Text style={styles.txt_tilte_m}>Personal</Text>
                 <TouchableOpacity style={styles.horizontal}>
