@@ -1,86 +1,87 @@
 import {
-    View, Text, StyleSheet, TouchableOpacity,
-    Image, SafeAreaView, ScrollView, FlatList, Button
-  } from 'react-native'
-  import React, { useState } from 'react'
- 
-  const Wishlist = () => {
+    View, Text,
+    StyleSheet, Image,
+    TouchableOpacity, ScrollView,
+    SafeAreaView, FlatList
+} from 'react-native'
+import React, { useState } from 'react'
+
+const Wishlist = () => {
     // dữ liệu mẫu testing
     const USERS = [{
         "id": 1,
         "name": "Sonsing",
         "email": "csturte0@barnesandnoble.com",
-        "photo": "http://dummyimage.com/189x100.png/ff4444/ffffff",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423516596_1622755301798686_6688950499091215330_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8SMr-0daZVIAX_rZc0A&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDDHy_KNaSkMApt3b8xR9EWoPEArHSz2bry7jtnSKqhdQ&oe=65BB58F8",
         "postion": "Research Associate",
         "rice": "$7.30"
     }, {
         "id": 2,
         "name": "Ronstring",
         "email": "lfeatherstone1@com.com",
-        "photo": "http://dummyimage.com/189x100.png/ff4444/ffffff",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
         "postion": "Administrative Assistant III",
         "rice": "$9.17"
     }, {
         "id": 3,
         "name": "Tempsoft",
         "email": "qpenright2@samsung.com",
-        "photo": "http://dummyimage.com/238x100.png/5fa2dd/ffffff",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
         "postion": "Senior Sales Associate",
         "rice": "$5.74"
     }, {
         "id": 4,
         "name": "Zontrax",
         "email": "astirman3@ox.ac.uk",
-        "photo": "http://dummyimage.com/250x100.png/ff4444/ffffff",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
         "postion": "Librarian",
         "rice": "$0.34"
     }, {
         "id": 5,
         "name": "Span",
         "email": "dsterley4@wp.com",
-        "photo": "http://dummyimage.com/199x100.png/5fa2dd/ffffff",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
         "postion": "Product Engineer",
         "rice": "$8.99"
     }, {
         "id": 6,
         "name": "Fix San",
         "email": "nablott5@creativecommons.org",
-        "photo": "http://dummyimage.com/240x100.png/dddddd/000000",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423516596_1622755301798686_6688950499091215330_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8SMr-0daZVIAX_rZc0A&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDDHy_KNaSkMApt3b8xR9EWoPEArHSz2bry7jtnSKqhdQ&oe=65BB58F8",
         "postion": "Associate Professor",
         "rice": "$2.46"
     }, {
         "id": 7,
         "name": "Alpha",
         "email": "ppaeckmeyer6@ehow.com",
-        "photo": "http://dummyimage.com/240x100.png/ff4444/ffffff",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
         "postion": "Social Worker",
         "rice": "$7.22"
     }, {
         "id": 8,
         "name": "Tres-Zap",
         "email": "bdoddemeade7@usa.gov",
-        "photo": "http://dummyimage.com/153x100.png/5fa2dd/ffffff",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
         "postion": "Biostatistician II",
         "rice": "$3.04"
     }, {
         "id": 9,
         "name": "Subin",
         "email": "cducket8@ameblo.jp",
-        "photo": "http://dummyimage.com/176x100.png/dddddd/000000",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
         "postion": "Research Nurse",
         "rice": "$7.73"
     }, {
         "id": 10,
         "name": "Sonsing",
         "email": "gmalster9@macromedia.com",
-        "photo": "http://dummyimage.com/230x100.png/cc0000/ffffff",
-        "postion": "Tax Accountant",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
         "rice": "$3.27"
     }, {
         "id": 11,
         "name": "Tres-Zap",
         "email": "sandressa@qq.com",
-        "photo": "http://dummyimage.com/246x100.png/5fa2dd/ffffff",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423516596_1622755301798686_6688950499091215330_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8SMr-0daZVIAX_rZc0A&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDDHy_KNaSkMApt3b8xR9EWoPEArHSz2bry7jtnSKqhdQ&oe=65BB58F8",
         "postion": "Human Resources Manager",
         "rice": "$2.12"
     }, {
@@ -114,13 +115,14 @@ import {
     }]
     const renderItem = ({ item }) => (
         <View style={styles.item}>
-            <View style={styles.avt_container}>
-                <Image source={{ uri: item.photo }} />
-                <TouchableOpacity style={styles.btn_delete_wish}>
+            <View >
+                <Image
+                    style={styles.avt_container}
+                    source={{ uri: item.photo }} />
+                    <TouchableOpacity style={styles.btn_delete_wish}>
                     <Image source={require('../../../../assets/image/ic_delete_wish.png')} />
                 </TouchableOpacity>
             </View>
-  
             <View style={styles.txt_container_item}>
                 <Text style={styles.txt_item}>{item.postion}</Text>
                 <Text style={styles.txt_itemM}>{item.rice}</Text>
@@ -178,10 +180,10 @@ import {
             </View>
         </View>
     )
-  }
-  
-  export default Wishlist
-  const styles = StyleSheet.create({
+}
+
+export default Wishlist
+const styles = StyleSheet.create({
     // container
     container: {
         paddingStart: '4%',
@@ -219,13 +221,13 @@ import {
     txt_newItems: {
         fontSize: 21,
         color: 'black',
-        fontFamily:'Raleway-Bold',
+        fontFamily: 'Raleway-Bold',
     },
     // custom scrollView
     scrollView: {
         paddingEnd: '3%',
         marginTop: '4%',
-        paddingBottom:'2%'
+        paddingBottom: '2%'
     },
     text: {
         fontSize: 42,
@@ -251,7 +253,6 @@ import {
     // custom New Items
     avt_container: {
         borderRadius: 5,
-        backgroundColor: 'gray',
         width: 121.18,
         height: 101.64,
         marginEnd: 10,
@@ -275,7 +276,7 @@ import {
     txt_container_item: {
         width: '80%',
         height: 50,
-  
+
     },
     // custom whishlist
     btn_or: {
@@ -291,8 +292,9 @@ import {
         color: 'black',
         textAlign: 'center',
     },
-    btn_delete_wish:{
-        marginVertical:'48%', 
-        marginHorizontal:'8%',
+    btn_delete_wish: {
+        position:'absolute',
+        marginVertical: '48%',
+        marginHorizontal: '8%',
     }
-  })
+})

@@ -25,11 +25,12 @@ import Cart from './src/apps/main/tabs/Cart';
 import Setting from './src/apps/main/tabs/Setting';
 
 
+
 function App(): React.JSX.Element {
 
   return (
     <SafeAreaView>
-    <Profile/>
+      <Setting/>
     </SafeAreaView>
   );
 }
