@@ -98,12 +98,15 @@ const Profile = () => {
   const renderItem = ({ item }) => (
       <View style={styles.item}>
           <View >
-              <Image
+          <TouchableOpacity style={[ styles.scv_imgContainer2]}>
+          <Image
                   style={styles.avt_container}
                   source={{ uri: item.photo }}/>
+          </TouchableOpacity>
+            
           </View>
           <View style={styles.txt_container_item}>
-              <Text style={styles.txt_itemM} >{item.name}</Text>
+              <Text style={styles.txt_item} >{item.name}</Text>
               <Text style={styles.txt_item}>{item.postion}</Text>
           </View>
 
@@ -239,8 +242,11 @@ const styles = StyleSheet.create({
       borderRadius: 20,
       marginEnd: '3%',
       paddingStart: '1.4%',
+      elevation: 2,
+      shadowOffset: { width: 0, height: 2 },
       shadowOpacity: 0.3,
-      shadowRadius:10,
+      shadowRadius: 4,
+      shadowColor: '1px 2px 9px #F4AAB9',
   },
   btn_avt: {
       backgroundColor: 'white',
@@ -265,34 +271,37 @@ const styles = StyleSheet.create({
   // custom icon
   btn_icon: {
       backgroundColor: '#F4F4F4',
-      width: 38,
-      height: 38,
-      borderRadius: 20,
-      marginStart: 10,
+      width: 30,
+      height: 30,
+      borderRadius: 25,
+      marginStart: 15,
       justifyContent: 'center',
-      marginVertical: '16%',
-      shadowOpacity: 0.3,
-      shadowRadius: 10,
+      marginVertical: '25%',
+      elevation: 2,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        shadowColor: '1px 2px 9px #F4AAB9',
   },
   cs_icon: {
-      width: 18,
-      height: 18,
-      marginStart: '25%'
+      width: 13,
+      height: 13,
+      marginStart: '30%'
 
   },
   cs_icon_mess: {
-      width: 15,
-      height: 10,
-      marginStart: '25%'
+      width: 13,
+      height: 8,
+      marginStart: '28%'
   },
   cs_icon_setting: {
       width: 35,
       height: 35,
-      marginStart: '10%'
+      marginStart: '8%'
   },
   // custom tilte
   txt_tilte: {
-      fontSize: 32,
+      fontSize: 28,
       lineHeight: 80,
       fontWeight: '700',
       fontFamily: 'raleway',
@@ -336,21 +345,34 @@ const styles = StyleSheet.create({
   },
   scv_btn: {
       marginEnd: 10,
+      elevation: 2,
+     
   },
   scv_img: {
       width: 50,
       height: 50,
       borderRadius: 25,
+      
   },
   scv_imgContainer: {
-      backgroundColor: 'F8F8F8',
+      backgroundColor: 'white',
       width: 60,
       height: 60,
-      borderRadius: 30,
+      borderRadius: 100,
       justifyContent: 'center',
       paddingStart: '1%',
-      shadowOpacity: 0.2,
-      shadowOffset: 10,
+    
+  },
+  scv_imgContainer2:{
+    backgroundColor: 'white',
+    padding:7,
+    borderRadius: 5,
+    elevation: 2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    shadowColor: '1px 3px 9px #F4AAB9',
+   
   },
   // custom MyOrder
   txt_or: {
@@ -394,17 +416,19 @@ const styles = StyleSheet.create({
     shadowRadius:100, 
     width:'10%',
     marginEnd:'3%',
+    
   },
   // custom New Items
   avt_container: {
       borderRadius: 5,
-      width: 100,
-      height: 100,
+      width: 130,
+      height: 130,
   },
   item: {
       flexDirection: 'column',
       alignItems: 'center',
-      padding: 16,
+      padding: 3,
+      paddingTop:10,
       borderBottomWidth: 1,
       borderBottomColor: '#ccc',
   },
@@ -416,6 +440,7 @@ const styles = StyleSheet.create({
   },
   txt_itemM:{
       color:'black', 
+      fontFamily:'Raleway-BoldItalic',
   },
   txt_container_item:{
       width: '80%', 

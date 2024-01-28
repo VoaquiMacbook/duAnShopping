@@ -6,7 +6,7 @@ import Profile from './Profile'
 const Setting = () => {
   return (
     <View>
-      <Profile/>
+      <Setting_1/>
     </View>
   )
 }

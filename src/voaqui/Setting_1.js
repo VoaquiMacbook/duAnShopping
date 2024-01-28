@@ -70,8 +70,8 @@ export default Setting_1
 const styles = StyleSheet.create({
     // container
     container: {
-        paddingEnd: '6%',
-        paddingStart: '6%',
+        paddingEnd: '8%',
+        paddingStart: '8%',
         maxHeight:'95%',
     },
     // cloumn, row
@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
     },
     horizontal: {
         flexDirection: 'row',
-
     },
     // flex
     flex: {

@@ -30,7 +30,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView>
-      <Setting/>
+     <Profile/>
     </SafeAreaView>
   );
 }
