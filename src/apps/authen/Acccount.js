@@ -3,7 +3,7 @@ import {
     TouchableOpacity
 } from 'react-native'
 import React, { useState } from 'react'
-
+import Dropdown from './Dropdown'
 const Acccount = () => {
    
     return (
@@ -51,15 +51,15 @@ const Acccount = () => {
             <View style={styles.inputContainer1}>
 
 
-            <Image
+            {/* <Image
                     style={styles.eyeIcon1}
                     source={require('../../../assets/image/England.png')}
-                />
-                
-                <Image
+                /> */}
+                <Dropdown/>
+                {/* <Image
                     style={styles.eyeIcon1}
                     source={require('../../../assets/image/arrowAcc.png')}
-                />
+                /> */}
                 <TextInput
                     style={styles.input1}
                     placeholder='Your number'
