@@ -303,7 +303,9 @@ const styles = StyleSheet.create({
   txt_tilte: {
       fontSize: 28,
       lineHeight: 80,
-      fontWeight: '700',
+      fontWeight: 
+      
+      '700',
       fontFamily: 'raleway',
       color:'#202020',
   },
