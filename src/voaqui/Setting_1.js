@@ -4,7 +4,7 @@ import React from 'react'
 const Setting_1 = () => {
     return (
         <SafeAreaView style={styles.container}>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <Text style={styles.txt_tilte}>Settings</Text>
                 <Text style={styles.txt_tilte_m}>Personal</Text>
                 <TouchableOpacity style={styles.horizontal}>
@@ -60,7 +60,7 @@ const Setting_1 = () => {
                 <View style={styles.line}></View>
                 <Text style={styles.txt_tilte_xs_2}>Delete My Account</Text>
                 <Text style={styles.txt_tilte_m_2}>Slada</Text>
-                <Text style={styles.txt_tilte_xs}>Version 1.0 April, 2020</Text>
+                <Text style={styles.txt_tilte_xss}>Version 1.0 April, 2020</Text>
             </ScrollView>
         </SafeAreaView>
     )
@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     },
     horizontal: {
         flexDirection: 'row',
+
     },
     // flex
     flex: {
@@ -96,7 +97,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 0.5,
         backgroundColor: 'gray',
-        marginTop: '1%',
+        marginTop: '2%',
         marginBottom: '8%',
     },
     // custom tilte
@@ -118,14 +119,20 @@ const styles = StyleSheet.create({
     txt_tilte_xs:{
         fontSize: 12,
         fontWeight: '400',
-        marginEnd:'2%',
+        alignSelf:'center'
+        
+    },
+    txt_tilte_xss:{
+        fontSize: 12,
+        fontWeight: '400',
     },
     txt_tilte_s: {
         fontSize: 16,
         fontWeight: '600',
         fontFamily: 'raleway',
         color: '#202020',
-        paddingBottom: '4%'
+        paddingBottom: '4%',
+        textAlignVertical:'center',
     },
     txt_tilte_m_2: {
         fontSize: 20,
@@ -144,7 +151,8 @@ const styles = StyleSheet.create({
     ic_right: {
         width: 16,
         height: 15,
-        marginVertical:1,
+        alignSelf:'center',
+        marginVertical:'2%',
     }
 
 })

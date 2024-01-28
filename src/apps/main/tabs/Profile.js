@@ -11,7 +11,7 @@ const Profile = () => {
       "id": 1,
       "name": "Sonsing",
       "email": "csturte0@barnesandnoble.com",
-      "photo": "https://www.figma.com/file/O4xnaTyzmAPJPPvmDjxs39/Ecommerce-Mobile-App-UI-kit-(Community)?type=design&node-id=465-18192&mode=design&t=5snV8tQe8munG4Rv-4",
+      "photo": "https://drive.google.com/file/d/1tL1oyIFKxiIvxMe31wOBkXRoftFV8Q20/view?usp=sharing",
       "postion": "Research Associate",
       "rice": "$7.30"
   }, {
@@ -418,7 +418,7 @@ const styles = StyleSheet.create({
   // custom New Items
   avt_container: {
       borderRadius: 5,
-      backgroundColor: 'gray',
+
       width: 100,
       height: 100,
   },
