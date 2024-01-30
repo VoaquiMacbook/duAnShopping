@@ -29,7 +29,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-    <Cart/>
+    <Search/>
     </SafeAreaView>
   );
 }
