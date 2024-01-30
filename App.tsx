@@ -30,7 +30,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-    <Acccount/>
+    <Start1/>
     </SafeAreaView>
   );
 }
