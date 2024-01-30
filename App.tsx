@@ -18,6 +18,7 @@ import Password from './src/apps/authen/Password';
 import Login from './src/apps/authen/Login';
 import Acccount from './src/apps/authen/Acccount';
 import Search from './src/apps/main/stacks/Search';
+import Dropdown from './src/apps/authen/Dropdown';
 // import voaqui
 import Profile from './src/apps/main/tabs/Profile';
 import Wishlist from './src/apps/main/tabs/Wishlist';
@@ -29,7 +30,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-    <Search/>
+    <Acccount/>
     </SafeAreaView>
   );
 }
