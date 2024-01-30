@@ -30,8 +30,13 @@ import Setting from './src/apps/main/tabs/Setting';
 function App(): React.JSX.Element {
 
   return (
+<<<<<<< Updated upstream
     <SafeAreaView>
      <Home/>
+=======
+    <SafeAreaView style={{flex:1}}>
+     <Detail/>
+>>>>>>> Stashed changes
     </SafeAreaView>
   );
 }
