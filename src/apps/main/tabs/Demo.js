@@ -3,22 +3,23 @@ import {
     StyleSheet, Image,
     TouchableOpacity, ScrollView,
     SafeAreaView, FlatList
-} from 'react-native'
-import React from 'react'
-const Profile_1 = () => {
+  } from 'react-native'
+  import React from 'react'
+  const Demo = () => {
+     
     // dữ liệu mẫu testing
     const USERS = [{
         "id": 1,
         "name": "Sonsing",
         "email": "csturte0@barnesandnoble.com",
-        "photo": "https://www.figma.com/file/O4xnaTyzmAPJPPvmDjxs39/Ecommerce-Mobile-App-UI-kit-(Community)?type=design&node-id=465-18192&mode=design&t=5snV8tQe8munG4Rv-4",
+        "photo": "https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent-hkg1-2.xx&oh=00_AfAVG65MS-yI--0u3r20KFm57WsJRodTtumrGlVwn_vJew&oe=65BB58C5",
         "postion": "Research Associate",
         "rice": "$7.30"
     }, {
         "id": 2,
         "name": "Ronstring",
         "email": "lfeatherstone1@com.com",
-        "photo": "http://dummyimage.com/189x100.png/ff4444/ffffff",
+        "photo":"https://drive.google.com/file/d/1_OYsv0lbxSCXX3aW38cnN0KEvMRFHv7s/view?usp=drive_link",
         "postion": "Administrative Assistant III",
         "rice": "$9.17"
     }, {
@@ -113,7 +114,11 @@ const Profile_1 = () => {
         "postion": "Compensation Analyst",
         "rice": "$9.50"
     }]
-
+    
+    
+    // In ra mảng USERS sau khi thay đổi
+    console.log(USERS);
+  
     const renderItem = ({ item }) => (
         <View style={styles.item}>
             <View >
@@ -125,10 +130,10 @@ const Profile_1 = () => {
                 <Text style={styles.txt_itemM} >{item.name}</Text>
                 <Text style={styles.txt_item}>{item.postion}</Text>
             </View>
-
+  
             <Text style={styles.txt_itemM}>{item.rice}</Text>
-
-
+  
+  
         </View>
     );
     return (
@@ -136,7 +141,7 @@ const Profile_1 = () => {
             <View style={styles.vertical}>
                 <View style={[styles.horizontal]}>
                     <TouchableOpacity style={[styles.img_avt, styles.btn_avt]}>
-                        <Image style={styles.img_avt} source={require('../../assets/image/img_avt.png')}></Image>
+                        <Image style={styles.img_avt} source={require('../../../../assets/image/img_avt.png')}></Image>
                     </TouchableOpacity>
                     <View style={styles.flex}>
                         <TouchableOpacity style={styles.btn_container}>
@@ -146,17 +151,17 @@ const Profile_1 = () => {
                     <View style={[styles.horizontal]}>
                         <View>
                             <TouchableOpacity style={styles.btn_icon}>
-                                <Image style={styles.cs_icon} source={require('../../assets/image/ic_vouchers.png')}></Image>
+                                <Image style={styles.cs_icon} source={require('../../../../assets/image/ic_vouchers.png')}></Image>
                             </TouchableOpacity>
                         </View>
                         <View>
                             <TouchableOpacity style={styles.btn_icon}>
-                                <Image style={styles.cs_icon_mess} source={require('../../assets/image/ic_mess.png')}></Image>
+                                <Image style={styles.cs_icon_mess} source={require('../../../../assets/image/ic_mess.png')}></Image>
                             </TouchableOpacity>
                         </View>
                         <View>
                             <TouchableOpacity style={styles.btn_icon}>
-                                <Image style={styles.cs_icon_setting} source={require('../../assets/image/ic_setting.png')}></Image>
+                                <Image style={styles.cs_icon_setting} source={require('../../../../assets/image/ic_setting.png')}></Image>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -168,8 +173,8 @@ const Profile_1 = () => {
                         <View style={styles.horizontal}>
                             <Text style={[styles.txt_thongbaoS, styles.flex]}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit luctus libero ac vulputate.</Text>
-                            <TouchableOpacity style={{ marginEnd: '3%' }}>
-                                <Image source={require('../../assets/image/ic_seemess.png')}></Image>
+                            <TouchableOpacity style={styles.btn_seeall}>
+                                <Image source={require('../../../../assets/image/ic_seemess.png')}></Image>
                             </TouchableOpacity>
                         </View>
                     </TouchableOpacity>
@@ -177,18 +182,18 @@ const Profile_1 = () => {
                 <View>
                     <Text style={styles.txt_tilte_rv}>Recently viewed</Text>
                 </View>
-
+  
                 <SafeAreaView style={styles.container}>
                     <ScrollView
                         horizontal={true}
                         showsVerticalScrollIndicator={false}
                         showsHorizontalScrollIndicator={false}
                         style={styles.scrollView}>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv5.png')} /></TouchableOpacity>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv1.png')} /></TouchableOpacity>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv2.png')} /></TouchableOpacity>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv3.png')} /></TouchableOpacity>
-                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../assets/image/img_Rv4.png')} /></TouchableOpacity>
+                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../../../assets/image/img_Rv5.png')} /></TouchableOpacity>
+                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../../../assets/image/img_Rv1.png')} /></TouchableOpacity>
+                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../../../assets/image/img_Rv2.png')} /></TouchableOpacity>
+                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../../../assets/image/img_Rv3.png')} /></TouchableOpacity>
+                        <TouchableOpacity style={[styles.scv_btn, styles.scv_imgContainer]}><Image style={styles.scv_img} source={require('../../../../assets/image/img_Rv4.png')} /></TouchableOpacity>
                     </ScrollView>
                 </SafeAreaView>
                 <Text style={styles.txt_or}>My Orders</Text>
@@ -212,8 +217,8 @@ const Profile_1 = () => {
                 <View style={[styles.horizontal_seeall]}>
                     <Text style={[styles.txt_newItems, styles.flex]}>New Items</Text>
                     <Text style={styles.txt_seeall}>See All</Text>
-                    <TouchableOpacity style={{ marginStart: 10, marginEnd:5, shadowOpacity:40, width:'10%'}}>
-                        <Image source={require('../../assets/image/ic_seemess.png')}></Image>
+                    <TouchableOpacity style={styles.btn_seeall}>
+                        <Image source={require('../../../../assets/image/ic_seemess.png')}></Image>
                     </TouchableOpacity>
                 </View>
                 <View>
@@ -226,22 +231,21 @@ const Profile_1 = () => {
                         renderItem={renderItem}
                     />
                 </View>
-
             </View>
-
+  
         </View>
     )
-}
-
-export default Profile_1
-const styles = StyleSheet.create({
+  }
+  
+  export default Demo
+  const styles = StyleSheet.create({
     // container
     container: {
         paddingStart: '3%',
         paddingEnd: '3%',
         marginTop:'5%'
     },
-    // cloumn, row
+    // cloumn
     vertical: {
         flexDirection: 'column',
     },
@@ -259,7 +263,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginEnd: '3%',
         paddingStart: '1.4%',
-        shadowOpacity: 20,
+        shadowOpacity: 0.3,
         shadowRadius:10,
     },
     btn_avt: {
@@ -291,14 +295,14 @@ const styles = StyleSheet.create({
         marginStart: 10,
         justifyContent: 'center',
         marginVertical: '16%',
-        shadowOpacity: 10,
+        shadowOpacity: 0.3,
         shadowRadius: 10,
     },
     cs_icon: {
         width: 18,
         height: 18,
         marginStart: '25%'
-
+  
     },
     cs_icon_mess: {
         width: 15,
@@ -325,8 +329,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#F4F4F4',
         borderRadius: 10,
         paddingStart: 14,
-        paddingTop: 10,
-        shadowOpacity:5,
+        paddingTop:'1%',
+        shadowOpacity:0.1,
     },
     txt_thongbao: {
         fontWeight: 'bold',
@@ -349,7 +353,7 @@ const styles = StyleSheet.create({
     },
     // custom scrollView
     scrollView: {
-
+  
     },
     text: {
         fontSize: 42,
@@ -408,10 +412,16 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color:'black'
     },
+    btn_seeall:{
+      marginStart: 10,  
+      shadowOpacity:0.3,
+      shadowRadius:100, 
+      width:'10%',
+      marginEnd:'3%',
+    },
     // custom New Items
     avt_container: {
         borderRadius: 5,
-        backgroundColor: 'gray',
         width: 100,
         height: 100,
     },
@@ -436,7 +446,9 @@ const styles = StyleSheet.create({
         alignItems: 'center', 
         height: 50,
     }
-
-
-});
-
+    
+  
+  
+  });
+  
+  

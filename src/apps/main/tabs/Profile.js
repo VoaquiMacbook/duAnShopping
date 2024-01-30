@@ -6,123 +6,107 @@ import {
 } from 'react-native'
 import React from 'react'
 const Profile = () => {
+   
   // dữ liệu mẫu testing
   const USERS = [{
       "id": 1,
       "name": "Sonsing",
       "email": "csturte0@barnesandnoble.com",
-      "photo": "https://www.figma.com/file/O4xnaTyzmAPJPPvmDjxs39/Ecommerce-Mobile-App-UI-kit-(Community)?type=design&node-id=465-18192&mode=design&t=5snV8tQe8munG4Rv-4",
+      "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
       "postion": "Research Associate",
       "rice": "$7.30"
   }, {
       "id": 2,
       "name": "Ronstring",
       "email": "lfeatherstone1@com.com",
-      "photo": "http://dummyimage.com/189x100.png/ff4444/ffffff",
+      "photo":"https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423480138_1622771141797102_8678712648772560882_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=B7-TEvqJLDoAX8uqEXU&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC1YpvPxJk90zvBYmL8TnxCxoYzNLZGVMt43oW0Am_tMQ&oe=65BB1C20",
       "postion": "Administrative Assistant III",
       "rice": "$9.17"
   }, {
       "id": 3,
       "name": "Tempsoft",
       "email": "qpenright2@samsung.com",
-      "photo": "http://dummyimage.com/238x100.png/5fa2dd/ffffff",
+      "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515545_1622771661797050_8968651052926042399_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=41hYz56AmeIAX_ZA1x0&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAIBLLCDNGF4v5Dp2ZWPrL1KDsVam3ywZX1N4T03RIfZQ&oe=65BA66CC",
       "postion": "Senior Sales Associate",
       "rice": "$5.74"
   }, {
-      "id": 4,
-      "name": "Zontrax",
-      "email": "astirman3@ox.ac.uk",
-      "photo": "http://dummyimage.com/250x100.png/ff4444/ffffff",
-      "postion": "Librarian",
-      "rice": "$0.34"
-  }, {
-      "id": 5,
-      "name": "Span",
-      "email": "dsterley4@wp.com",
-      "photo": "http://dummyimage.com/199x100.png/5fa2dd/ffffff",
-      "postion": "Product Engineer",
-      "rice": "$8.99"
-  }, {
-      "id": 6,
-      "name": "Fix San",
-      "email": "nablott5@creativecommons.org",
-      "photo": "http://dummyimage.com/240x100.png/dddddd/000000",
-      "postion": "Associate Professor",
-      "rice": "$2.46"
-  }, {
-      "id": 7,
-      "name": "Alpha",
-      "email": "ppaeckmeyer6@ehow.com",
-      "photo": "http://dummyimage.com/240x100.png/ff4444/ffffff",
-      "postion": "Social Worker",
-      "rice": "$7.22"
-  }, {
-      "id": 8,
-      "name": "Tres-Zap",
-      "email": "bdoddemeade7@usa.gov",
-      "photo": "http://dummyimage.com/153x100.png/5fa2dd/ffffff",
-      "postion": "Biostatistician II",
-      "rice": "$3.04"
-  }, {
-      "id": 9,
-      "name": "Subin",
-      "email": "cducket8@ameblo.jp",
-      "photo": "http://dummyimage.com/176x100.png/dddddd/000000",
-      "postion": "Research Nurse",
-      "rice": "$7.73"
-  }, {
-      "id": 10,
-      "name": "Sonsing",
-      "email": "gmalster9@macromedia.com",
-      "photo": "http://dummyimage.com/230x100.png/cc0000/ffffff",
-      "postion": "Tax Accountant",
-      "rice": "$3.27"
-  }, {
-      "id": 11,
-      "name": "Tres-Zap",
-      "email": "sandressa@qq.com",
-      "photo": "http://dummyimage.com/246x100.png/5fa2dd/ffffff",
-      "postion": "Human Resources Manager",
-      "rice": "$2.12"
-  }, {
-      "id": 12,
-      "name": "Prodder",
-      "email": "tcamoisb@scientificamerican.com",
-      "photo": "http://dummyimage.com/226x100.png/cc0000/ffffff",
-      "postion": "Human Resources Assistant II",
-      "rice": "$7.07"
-  }, {
-      "id": 13,
-      "name": "Daltfresh",
-      "email": "jtrowlerc@msu.edu",
-      "photo": "http://dummyimage.com/216x100.png/cc0000/ffffff",
-      "postion": "Dental Hygienist",
-      "rice": "$0.71"
-  }, {
-      "id": 14,
-      "name": "Stim",
-      "email": "deasund@guardian.co.uk",
-      "photo": "http://dummyimage.com/136x100.png/dddddd/000000",
-      "postion": "VP Sales",
-      "rice": "$2.81"
-  }, {
-      "id": 15,
-      "name": "Redhold",
-      "email": "tleape@washington.edu",
-      "photo": "http://dummyimage.com/233x100.png/ff4444/ffffff",
-      "postion": "Compensation Analyst",
-      "rice": "$9.50"
-  }]
+    "id": 4,
+    "name": "Zontrax",
+    "email": "astirman3@ox.ac.uk",
+    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
+    "postion": "Librarian",
+    "rice": "$0.34"
+}, {
+    "id": 5,
+    "name": "Span",
+    "email": "dsterley4@wp.com",
+    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
+    "postion": "Product Engineer",
+    "rice": "$8.99"
+}, {
+    "id": 6,
+    "name": "Fix San",
+    "email": "nablott5@creativecommons.org",
+    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423516596_1622755301798686_6688950499091215330_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8SMr-0daZVIAX_rZc0A&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDDHy_KNaSkMApt3b8xR9EWoPEArHSz2bry7jtnSKqhdQ&oe=65BB58F8",
+    "postion": "Associate Professor",
+    "rice": "$2.46"
+}, {
+    "id": 7,
+    "name": "Alpha",
+    "email": "ppaeckmeyer6@ehow.com",
+    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
+    "postion": "Social Worker",
+    "rice": "$7.22"
+}, {
+    "id": 8,
+    "name": "Tres-Zap",
+    "email": "bdoddemeade7@usa.gov",
+    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
+    "postion": "Biostatistician II",
+    "rice": "$3.04"
+}, {
+    "id": 9,
+    "name": "Subin",
+    "email": "cducket8@ameblo.jp",
+    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
+    "postion": "Research Nurse",
+    "rice": "$7.73"
+}, {
+    "id": 10,
+    "name": "Sonsing",
+    "email": "gmalster9@macromedia.com",
+    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
+    "rice": "$3.27"
+}, {
+    "id": 11,
+    "name": "Tres-Zap",
+    "email": "sandressa@qq.com",
+    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423516596_1622755301798686_6688950499091215330_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8SMr-0daZVIAX_rZc0A&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDDHy_KNaSkMApt3b8xR9EWoPEArHSz2bry7jtnSKqhdQ&oe=65BB58F8",
+    "postion": "Human Resources Manager",
+    "rice": "$2.12"
+}, {
+    "id": 12,
+    "name": "Prodder",
+    "email": "tcamoisb@scientificamerican.com",
+    "photo": "http://dummyimage.com/226x100.png/cc0000/ffffff",
+    "postion": "Human Resources Assistant II",
+    "rice": "$7.07"
+}]
+  
+  
 
   const renderItem = ({ item }) => (
       <View style={styles.item}>
           <View >
-              <Image
+          <TouchableOpacity style={[ styles.scv_imgContainer2]}>
+          <Image
                   style={styles.avt_container}
                   source={{ uri: item.photo }}/>
+          </TouchableOpacity>
+            
           </View>
           <View style={styles.txt_container_item}>
-              <Text style={styles.txt_itemM} >{item.name}</Text>
+              <Text style={styles.txt_item} >{item.name}</Text>
               <Text style={styles.txt_item}>{item.postion}</Text>
           </View>
 
@@ -226,7 +210,6 @@ const Profile = () => {
                       renderItem={renderItem}
                   />
               </View>
-
           </View>
 
       </View>
@@ -259,8 +242,11 @@ const styles = StyleSheet.create({
       borderRadius: 20,
       marginEnd: '3%',
       paddingStart: '1.4%',
+      elevation: 2,
+      shadowOffset: { width: 0, height: 2 },
       shadowOpacity: 0.3,
-      shadowRadius:10,
+      shadowRadius: 4,
+      shadowColor: '1px 2px 9px #F4AAB9',
   },
   btn_avt: {
       backgroundColor: 'white',
@@ -285,36 +271,41 @@ const styles = StyleSheet.create({
   // custom icon
   btn_icon: {
       backgroundColor: '#F4F4F4',
-      width: 38,
-      height: 38,
-      borderRadius: 20,
-      marginStart: 10,
+      width: 30,
+      height: 30,
+      borderRadius: 25,
+      marginStart: 15,
       justifyContent: 'center',
-      marginVertical: '16%',
-      shadowOpacity: 0.3,
-      shadowRadius: 10,
+      marginVertical: '25%',
+      elevation: 2,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        shadowColor: '1px 2px 9px #F4AAB9',
   },
   cs_icon: {
-      width: 18,
-      height: 18,
-      marginStart: '25%'
+      width: 13,
+      height: 13,
+      marginStart: '30%'
 
   },
   cs_icon_mess: {
-      width: 15,
-      height: 10,
-      marginStart: '25%'
+      width: 13,
+      height: 8,
+      marginStart: '28%'
   },
   cs_icon_setting: {
       width: 35,
       height: 35,
-      marginStart: '10%'
+      marginStart: '8%'
   },
   // custom tilte
   txt_tilte: {
-      fontSize: 32,
+      fontSize: 28,
       lineHeight: 80,
-      fontWeight: '700',
+      fontWeight: 
+      
+      '700',
       fontFamily: 'raleway',
       color:'#202020',
   },
@@ -356,21 +347,34 @@ const styles = StyleSheet.create({
   },
   scv_btn: {
       marginEnd: 10,
+      elevation: 2,
+     
   },
   scv_img: {
       width: 50,
       height: 50,
       borderRadius: 25,
+      
   },
   scv_imgContainer: {
-      backgroundColor: 'F8F8F8',
+      backgroundColor: 'white',
       width: 60,
       height: 60,
-      borderRadius: 30,
+      borderRadius: 100,
       justifyContent: 'center',
       paddingStart: '1%',
-      shadowOpacity: 0.2,
-      shadowOffset: 10,
+    
+  },
+  scv_imgContainer2:{
+    backgroundColor: 'white',
+    padding:7,
+    borderRadius: 5,
+    elevation: 2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    shadowColor: '1px 3px 9px #F4AAB9',
+   
   },
   // custom MyOrder
   txt_or: {
@@ -414,18 +418,19 @@ const styles = StyleSheet.create({
     shadowRadius:100, 
     width:'10%',
     marginEnd:'3%',
+    
   },
   // custom New Items
   avt_container: {
       borderRadius: 5,
-      backgroundColor: 'gray',
-      width: 100,
-      height: 100,
+      width: 130,
+      height: 130,
   },
   item: {
       flexDirection: 'column',
       alignItems: 'center',
-      padding: 16,
+      padding: 3,
+      paddingTop:10,
       borderBottomWidth: 1,
       borderBottomColor: '#ccc',
   },
@@ -437,6 +442,7 @@ const styles = StyleSheet.create({
   },
   txt_itemM:{
       color:'black', 
+      fontFamily:'Raleway-BoldItalic',
   },
   txt_container_item:{
       width: '80%', 
