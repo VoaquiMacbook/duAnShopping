@@ -204,6 +204,7 @@ const styles = StyleSheet.create({
     // custom Total
     horizontal_Total: {
         flexDirection: 'row',
+        backgroundColor:'black',
         height: '20%',
         backgroundColor: '#F5F5F5',
         padding: 10,
@@ -327,7 +328,7 @@ const styles = StyleSheet.create({
     },
     txt_itemM: {
         color: 'black',
-        fontFamily: 'Raleway-BoldItalic',
+        fontFamily: 'Raleway-Bold',
         fontSize: 16,
 
     },

@@ -111,31 +111,36 @@ const styles = StyleSheet.create({
     txt_tilte_xs_2:{
         paddingBottom: '8%',
         fontSize: 13,
-        fontWeight: '400',
+        fontWeight: 'bold',
         marginEnd:'2%',
         color:'#D97474',
     },
     txt_tilte_xs:{
         fontSize: 12,
         fontWeight: '400',
+      color:'black',
+      marginRight:16,
         alignSelf:'center'
         
     },
     txt_tilte_xss:{
         fontSize: 12,
         fontWeight: '400',
+        color:'black'
     },
     txt_tilte_s: {
         fontSize: 16,
-        fontWeight: '600',
+        fontWeight: '750',
         fontFamily: 'raleway',
         color: '#202020',
+        
         paddingBottom: '4%',
         textAlignVertical:'center',
     },
     txt_tilte_m_2: {
         fontSize: 20,
         fontWeight: '900',
+        
         fontFamily: 'raleway',
         color: '#202020',
       
