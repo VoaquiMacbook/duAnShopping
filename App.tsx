@@ -31,7 +31,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView>
-     <Profile/>
+     <Home/>
     </SafeAreaView>
   );
 }
