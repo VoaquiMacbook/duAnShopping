@@ -34,8 +34,8 @@ function App(): React.JSX.Element {
       <StatusBar barStyle="dark-content" backgroundColor="white" />
       {/* <Cart /> */}
       {/* <Profile/> */}
-      {/* <Wishlist/> */}
-      <Setting />
+      <Wishlist/>
+      {/* <Setting /> */}
     </SafeAreaView>
   );
 }

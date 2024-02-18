@@ -426,6 +426,7 @@ const styles = StyleSheet.create({
     img_container: {
         width: 120,
         height: 120,
+        borderRadius:5,
     },
     item: {
         flexDirection: 'column',

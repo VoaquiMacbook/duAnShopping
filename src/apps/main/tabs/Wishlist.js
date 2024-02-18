@@ -26,7 +26,7 @@ const Wishlist = () => {
         "id": 3,
         "name": "Tempsoft",
         "email": "qpenright2@samsung.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
+        "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428336830_1636024337138449_5803983350826795139_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pfWEqS7uG-cAX9jqUtP&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfDsjpNRMlWsXVbACMpvVUsbBgzHwar-utj9vKvMJV4kLw&oe=65D6AEB3",
         "postion": "Senior Sales Associate",
         "rice": "$5.74"
     }, {
@@ -61,7 +61,7 @@ const Wishlist = () => {
         "id": 8,
         "name": "Tres-Zap",
         "email": "bdoddemeade7@usa.gov",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
+        "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428336830_1636024337138449_5803983350826795139_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pfWEqS7uG-cAX9jqUtP&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfDsjpNRMlWsXVbACMpvVUsbBgzHwar-utj9vKvMJV4kLw&oe=65D6AEB3",
         "postion": "Biostatistician II",
         "rice": "$3.04"
     }, {
