@@ -12,106 +12,128 @@ const Wishlist = () => {
         "id": 1,
         "name": "Sonsing",
         "email": "csturte0@barnesandnoble.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423516596_1622755301798686_6688950499091215330_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8SMr-0daZVIAX_rZc0A&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDDHy_KNaSkMApt3b8xR9EWoPEArHSz2bry7jtnSKqhdQ&oe=65BB58F8",
+        "photo": "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/428329969_1636024333805116_1559700001182853901_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=Qyu_I3cbQygAX8OkSww&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfA3_jqUIT4k9IW3Q4F-5K2JiMfO3M751SXQSXAHEmUiHg&oe=65D70479",
         "postion": "Research Associate",
         "rice": "$7.30"
     }, {
         "id": 2,
         "name": "Ronstring",
         "email": "lfeatherstone1@com.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
+        "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428409384_1635936827147200_5008196241783858298_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=GcH7ZDTtuMIAX99uOOr&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfBE-xukDS4n19yTJ-d2qgGNhXeVPqqNzi7QYmgbL73siQ&oe=65D679FD",
         "postion": "Administrative Assistant III",
         "rice": "$9.17"
     }, {
         "id": 3,
         "name": "Tempsoft",
         "email": "qpenright2@samsung.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
+        "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428336830_1636024337138449_5803983350826795139_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pfWEqS7uG-cAX9jqUtP&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfDsjpNRMlWsXVbACMpvVUsbBgzHwar-utj9vKvMJV4kLw&oe=65D6AEB3",
         "postion": "Senior Sales Associate",
         "rice": "$5.74"
     }, {
         "id": 4,
         "name": "Zontrax",
         "email": "astirman3@ox.ac.uk",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
+        "photo": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/428457185_1635981313809418_3026649841359181726_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pqMSR6HmjOcAX8xgUre&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfB6pSp5AXVICQLO7rp24UZseuqvL4zfrX7fXfZGd-_gqg&oe=65D6C2E5",
         "postion": "Librarian",
         "rice": "$0.34"
     }, {
         "id": 5,
         "name": "Span",
         "email": "dsterley4@wp.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
+        "photo": "https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/428282041_1635981393809410_2758062445062834597_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=yQur5_SYAgUAX9Q28WV&_nc_oc=AQm5U5wTsjP4A9KcJJnEDWIkvtH8rJ8yBIdM9O4Mfc2YrkD43zaKRLjXn3pHaKjnFRQ&_nc_ht=scontent.fsgn2-10.fna&oh=00_AfASLC16HndgoXZGdPTE95CEedRtuWIrIiMhSCY79oD_CQ&oe=65D6CD4E",
         "postion": "Product Engineer",
         "rice": "$8.99"
     }, {
         "id": 6,
         "name": "Fix San",
         "email": "nablott5@creativecommons.org",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423516596_1622755301798686_6688950499091215330_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8SMr-0daZVIAX_rZc0A&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDDHy_KNaSkMApt3b8xR9EWoPEArHSz2bry7jtnSKqhdQ&oe=65BB58F8",
+        "photo": "https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/428401437_1635981317142751_1112247208910531385_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=YwyaedH-JWIAX90bc7a&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfC3cgU1_qsGEeRtJEhOtBuEtPyAGWUbID8vyenjHMV0EA&oe=65D61DF1",
         "postion": "Associate Professor",
         "rice": "$2.46"
     }, {
         "id": 7,
         "name": "Alpha",
         "email": "ppaeckmeyer6@ehow.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
+        "photo": "https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/428358435_1635981320476084_3288892428397491297_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_ohc=D7j3KLe687cAX_5477n&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfCxFU_QPSl1vEEr_k3oPg2EBOdIMYQGTAHG19A1yy_0OA&oe=65D7EB3B",
         "postion": "Social Worker",
         "rice": "$7.22"
     }, {
         "id": 8,
         "name": "Tres-Zap",
         "email": "bdoddemeade7@usa.gov",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
+        "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428374566_1635941677146715_6652605961499572060_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=xvGg991KOSgAX_HiDGM&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfDOHWPtvlyuEV2oY9oXe0kJGOaSYJxtirfWaq4h1yakmw&oe=65D68B4C",
         "postion": "Biostatistician II",
         "rice": "$3.04"
     }, {
         "id": 9,
         "name": "Subin",
         "email": "cducket8@ameblo.jp",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
+        "photo": "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/428277596_1635941687146714_8900359495859420354_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=ijQHmKzx7DgAX9ir27J&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfDcmsrq9OjViY5qNkXFbPZzeO79eYppe0UGbcq_G6vLBw&oe=65D78A54",
         "postion": "Research Nurse",
         "rice": "$7.73"
-    }, {
+    },{
         "id": 10,
         "name": "Sonsing",
-        "email": "gmalster9@macromedia.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
-        "rice": "$3.27"
+        "email": "csturte0@barnesandnoble.com",
+        "photo": "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/428329969_1636024333805116_1559700001182853901_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=Qyu_I3cbQygAX8OkSww&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfA3_jqUIT4k9IW3Q4F-5K2JiMfO3M751SXQSXAHEmUiHg&oe=65D70479",
+        "postion": "Research Associate",
+        "rice": "$7.30"
     }, {
         "id": 11,
-        "name": "Tres-Zap",
-        "email": "sandressa@qq.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423516596_1622755301798686_6688950499091215330_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8SMr-0daZVIAX_rZc0A&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDDHy_KNaSkMApt3b8xR9EWoPEArHSz2bry7jtnSKqhdQ&oe=65BB58F8",
-        "postion": "Human Resources Manager",
-        "rice": "$2.12"
+        "name": "Ronstring",
+        "email": "lfeatherstone1@com.com",
+        "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428409384_1635936827147200_5008196241783858298_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=GcH7ZDTtuMIAX99uOOr&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfBE-xukDS4n19yTJ-d2qgGNhXeVPqqNzi7QYmgbL73siQ&oe=65D679FD",
+        "postion": "Administrative Assistant III",
+        "rice": "$9.17"
     }, {
         "id": 12,
-        "name": "Prodder",
-        "email": "tcamoisb@scientificamerican.com",
-        "photo": "http://dummyimage.com/226x100.png/cc0000/ffffff",
-        "postion": "Human Resources Assistant II",
-        "rice": "$7.07"
+        "name": "Tempsoft",
+        "email": "qpenright2@samsung.com",
+        "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428336830_1636024337138449_5803983350826795139_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pfWEqS7uG-cAX9jqUtP&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfDsjpNRMlWsXVbACMpvVUsbBgzHwar-utj9vKvMJV4kLw&oe=65D6AEB3",
+        "postion": "Senior Sales Associate",
+        "rice": "$5.74"
     }, {
         "id": 13,
-        "name": "Daltfresh",
-        "email": "jtrowlerc@msu.edu",
-        "photo": "http://dummyimage.com/216x100.png/cc0000/ffffff",
-        "postion": "Dental Hygienist",
-        "rice": "$0.71"
+        "name": "Zontrax",
+        "email": "astirman3@ox.ac.uk",
+        "photo": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/428457185_1635981313809418_3026649841359181726_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pqMSR6HmjOcAX8xgUre&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfB6pSp5AXVICQLO7rp24UZseuqvL4zfrX7fXfZGd-_gqg&oe=65D6C2E5",
+        "postion": "Librarian",
+        "rice": "$0.34"
     }, {
         "id": 14,
-        "name": "Stim",
-        "email": "deasund@guardian.co.uk",
-        "photo": "http://dummyimage.com/136x100.png/dddddd/000000",
-        "postion": "VP Sales",
-        "rice": "$2.81"
+        "name": "Span",
+        "email": "dsterley4@wp.com",
+        "photo": "https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/428282041_1635981393809410_2758062445062834597_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=yQur5_SYAgUAX9Q28WV&_nc_oc=AQm5U5wTsjP4A9KcJJnEDWIkvtH8rJ8yBIdM9O4Mfc2YrkD43zaKRLjXn3pHaKjnFRQ&_nc_ht=scontent.fsgn2-10.fna&oh=00_AfASLC16HndgoXZGdPTE95CEedRtuWIrIiMhSCY79oD_CQ&oe=65D6CD4E",
+        "postion": "Product Engineer",
+        "rice": "$8.99"
     }, {
         "id": 15,
-        "name": "Redhold",
-        "email": "tleape@washington.edu",
-        "photo": "http://dummyimage.com/233x100.png/ff4444/ffffff",
-        "postion": "Compensation Analyst",
-        "rice": "$9.50"
+        "name": "Fix San",
+        "email": "nablott5@creativecommons.org",
+        "photo": "https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/428401437_1635981317142751_1112247208910531385_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=YwyaedH-JWIAX90bc7a&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfC3cgU1_qsGEeRtJEhOtBuEtPyAGWUbID8vyenjHMV0EA&oe=65D61DF1",
+        "postion": "Associate Professor",
+        "rice": "$2.46"
+    }, {
+        "id": 16,
+        "name": "Alpha",
+        "email": "ppaeckmeyer6@ehow.com",
+        "photo": "https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/428358435_1635981320476084_3288892428397491297_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_ohc=D7j3KLe687cAX_5477n&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfCxFU_QPSl1vEEr_k3oPg2EBOdIMYQGTAHG19A1yy_0OA&oe=65D7EB3B",
+        "postion": "Social Worker",
+        "rice": "$7.22"
+    }, {
+        "id": 17,
+        "name": "Tres-Zap",
+        "email": "bdoddemeade7@usa.gov",
+        "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428374566_1635941677146715_6652605961499572060_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=xvGg991KOSgAX_HiDGM&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfDOHWPtvlyuEV2oY9oXe0kJGOaSYJxtirfWaq4h1yakmw&oe=65D68B4C",
+        "postion": "Biostatistician II",
+        "rice": "$3.04"
+    }, {
+        "id": 18,
+        "name": "Subin",
+        "email": "cducket8@ameblo.jp",
+        "photo": "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/428277596_1635941687146714_8900359495859420354_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=ijQHmKzx7DgAX9ir27J&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfDcmsrq9OjViY5qNkXFbPZzeO79eYppe0UGbcq_G6vLBw&oe=65D78A54",
+        "postion": "Research Nurse",
+        "rice": "$7.73"
     }]
     const renderItem = ({ item }) => (
         <View style={styles.item}>
@@ -151,7 +173,7 @@ const Wishlist = () => {
             <Text style={styles.txt_tilte}>Wishlist</Text>
             <View style={[styles.horizontal_seeall]}>
                 <Text style={[styles.txt_newItems, styles.flex]}>Recently viewed</Text>
-                <TouchableOpacity style={{ marginStart: 10, marginEnd: 5, shadowOpacity: 40, width: '10%' }}>
+                <TouchableOpacity style={{ marginStart: 10, marginEnd: 5, shadowOpacity: 0.1, width: '10%' }}>
                     <Image source={require('../../../../assets/image/ic_seemess.png')}></Image>
                 </TouchableOpacity>
             </View>
@@ -271,7 +293,6 @@ const styles = StyleSheet.create({
     },
     item: {
         flexDirection: 'row',
-      
         paddingTop: 10,
     },
     txt_item: {
@@ -314,9 +335,9 @@ const styles = StyleSheet.create({
         padding: 5,
         borderRadius: 5,
         elevation: 1,
-        shadowOffset: { width: 20, height: 2 },
-        shadowOpacity: 0.4,
-        shadowRadius: 20,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 10,
         shadowColor: '1px 3px 9px #F4AAB9',
         marginEnd: 10,
     

@@ -24,7 +24,7 @@ const Cart = () => {
     "id": 3,
     "name": "Tempsoft",
     "email": "qpenright2@samsung.com",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
+    "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428409384_1635936827147200_5008196241783858298_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=GcH7ZDTtuMIAX99uOOr&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfBE-xukDS4n19yTJ-d2qgGNhXeVPqqNzi7QYmgbL73siQ&oe=65D679FD",
     "postion": "Senior Sales Associate",
     "rice": "$5.74"
   }]
@@ -33,31 +33,31 @@ const Cart = () => {
     "id": 1,
     "name": "Sonsing",
     "email": "csturte0@barnesandnoble.com",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423480138_1622771141797102_8678712648772560882_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=B7-TEvqJLDoAX8uqEXU&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC1YpvPxJk90zvBYmL8TnxCxoYzNLZGVMt43oW0Am_tMQ&oe=65BB1C20",
+    "photo": "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/428329969_1636024333805116_1559700001182853901_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=Qyu_I3cbQygAX8OkSww&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfA3_jqUIT4k9IW3Q4F-5K2JiMfO3M751SXQSXAHEmUiHg&oe=65D70479",
     "postion": "Research Associate",
     "rice": "$7.30"
-  }, {
+}, {
     "id": 2,
     "name": "Ronstring",
     "email": "lfeatherstone1@com.com",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
+    "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428409384_1635936827147200_5008196241783858298_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=GcH7ZDTtuMIAX99uOOr&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfBE-xukDS4n19yTJ-d2qgGNhXeVPqqNzi7QYmgbL73siQ&oe=65D679FD",
     "postion": "Administrative Assistant III",
     "rice": "$9.17"
-  }, {
+}, {
     "id": 3,
+    "name": "Tempsoft",
+    "email": "qpenright2@samsung.com",
+    "photo": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/428336830_1636024337138449_5803983350826795139_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pfWEqS7uG-cAX9jqUtP&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfDsjpNRMlWsXVbACMpvVUsbBgzHwar-utj9vKvMJV4kLw&oe=65D6AEB3",
+    "postion": "Senior Sales Associate",
+    "rice": "$5.74"
+}, {
+    "id": 4,
     "name": "Zontrax",
     "email": "astirman3@ox.ac.uk",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
+    "photo": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/428457185_1635981313809418_3026649841359181726_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pqMSR6HmjOcAX8xgUre&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfB6pSp5AXVICQLO7rp24UZseuqvL4zfrX7fXfZGd-_gqg&oe=65D6C2E5",
     "postion": "Librarian",
     "rice": "$0.34"
-  }, {
-    "id": 4,
-    "name": "Span",
-    "email": "dsterley4@wp.com",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
-    "postion": "Product Engineer",
-    "rice": "$8.99"
-  }]
+}]
   const renderItemWish = ({ item }) => (
     <View style={styles.item}>
       <TouchableOpacity style={[styles.scv_imgContainer2]}>
@@ -244,6 +244,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginBottom: '3%',
     height: 30,
+    alignItems:'center',
   },
   btn_number: {
     marginTop: 3,
@@ -383,7 +384,7 @@ const styles = StyleSheet.create({
     paddingStart: 14,
     paddingTop: 10,
     marginBottom: 10,
-    shadowOpacity: 5,
+    shadowOpacity: 0.2,
   },
   txt_thongbao: {
     fontWeight: 'bold',
@@ -402,7 +403,7 @@ const styles = StyleSheet.create({
     padding: 5,
     borderRadius: 5,
     elevation: 1,
-    shadowOffset: { width: 20, height: 2 },
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.4,
     shadowRadius: 20,
     shadowColor: '1px 3px 9px #F4AAB9',
