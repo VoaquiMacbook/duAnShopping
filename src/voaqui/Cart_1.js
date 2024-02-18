@@ -10,14 +10,14 @@ const Cart_1 = () => {
         "id": 1,
         "name": "Sonsing",
         "email": "csturte0@barnesandnoble.com",
-        "photo": "https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent-hkg1-2.xx&oh=00_AfAVG65MS-yI--0u3r20KFm57WsJRodTtumrGlVwn_vJew&oe=65BB58C5",
+        "photo": "https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/428282041_1635981393809410_2758062445062834597_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=yQur5_SYAgUAX9Q28WV&_nc_oc=AQm5U5wTsjP4A9KcJJnEDWIkvtH8rJ8yBIdM9O4Mfc2YrkD43zaKRLjXn3pHaKjnFRQ&_nc_ht=scontent.fsgn2-10.fna&oh=00_AfASLC16HndgoXZGdPTE95CEedRtuWIrIiMhSCY79oD_CQ&oe=65D6CD4E",
         "postion": "Research Associate",
         "rice": "$7.30"
     }, {
-        "id": 2,
+        "id": 2,  
         "name": "Ronstring",
         "email": "lfeatherstone1@com.com",
-        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
+        "photo": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/428457185_1635981313809418_3026649841359181726_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pqMSR6HmjOcAX8xgUre&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfB6pSp5AXVICQLO7rp24UZseuqvL4zfrX7fXfZGd-_gqg&oe=65D6C2E5",
         "postion": "Administrative Assistant III",
         "rice": "$9.17"
     }, {
@@ -309,8 +309,8 @@ const styles = StyleSheet.create({
     avt_container: {
         borderRadius: 5,
         backgroundColor: 'gray',
-        width: 121.18,
-        height: 101.64,
+        width: 120,
+        height: 110,
         marginEnd: 10,
 
     },

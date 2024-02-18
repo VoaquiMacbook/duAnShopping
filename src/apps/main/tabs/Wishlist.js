@@ -115,14 +115,14 @@ const Wishlist = () => {
     }]
     const renderItem = ({ item }) => (
         <View style={styles.item}>
-            <View >
+            <TouchableOpacity style={[styles.scv_imgContainer2]}>
                 <Image
                     style={styles.avt_container}
                     source={{ uri: item.photo }} />
-                    <TouchableOpacity style={styles.btn_delete_wish}>
+                <TouchableOpacity style={styles.btn_delete_wish}>
                     <Image source={require('../../../../assets/image/ic_delete_wish.png')} />
                 </TouchableOpacity>
-            </View>
+            </TouchableOpacity>
             <View style={styles.txt_container_item}>
                 <Text style={styles.txt_item}>{item.postion}</Text>
                 <Text style={styles.txt_itemM}>{item.rice}</Text>
@@ -137,9 +137,9 @@ const Wishlist = () => {
                             <Text style={styles.btn_text_or}>M</Text>
                         </TouchableOpacity>
                     </View>
-                    <View style={{ flex: 1, marginHorizontal: '30%' }}>
-                        <TouchableOpacity>
-                            <Image source={require('../../../../assets/image/ic_Add_wish.png')} />
+                    <View style={{ marginHorizontal: '28%' }}>
+                        <TouchableOpacity style={{ marginTop: 5 }}>
+                            <Image style={{ width: 26, height: 21.5 }} source={require('../../../../assets/image/ic_Add_wish.png')} />
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -202,7 +202,9 @@ const styles = StyleSheet.create({
     },
     horizontal: {
         flexDirection: 'row',
+        alignItems: 'center'
     },
+
     // flex
     flex: {
         flex: 1,
@@ -223,43 +225,53 @@ const styles = StyleSheet.create({
         color: 'black',
         fontFamily: 'Raleway-Bold',
     },
-    // custom scrollView
-    scrollView: {
-        paddingEnd: '3%',
-        marginTop: '4%',
-        paddingBottom: '2%'
-    },
-    text: {
-        fontSize: 42,
-    },
-    scv_btn: {
-        marginEnd: 13,
-    },
-    scv_img: {
-        width: 50,
-        height: 50,
-        borderRadius: 25,
-    },
-    scv_imgContainer: {
-        backgroundColor: 'F8F8F8',
-        width: 60,
-        height: 60,
-        borderRadius: 30,
-        justifyContent: 'center',
-        paddingStart: '1%',
-        shadowOpacity: 0.2,
-        shadowOffset: 10,
-    },
+   // custom scrollView
+   scrollView: {
+
+   },
+   text: {
+       fontSize: 42,
+   },
+   scv_btn: {
+       marginEnd: 10,
+       elevation: 2,
+
+   },
+   scv_img: {
+       width: 50,
+       height: 50,
+       borderRadius: 25,
+
+   },
+   scv_imgContainer: {
+       backgroundColor: 'white',
+       width: 60,
+       height: 60,
+       borderRadius: 100,
+       justifyContent: 'center',
+       paddingStart: '1.3%',
+
+   },
+   scv_imgContainer2: {
+       backgroundColor: 'white',
+       padding: 5,
+       borderRadius: 5,
+       elevation: 1,
+       shadowOffset: { width: 0, height: 2 },
+       shadowOpacity: 0.3,
+       shadowRadius: 4,
+       shadowColor: '1px 3px 9px #F4AAB9',
+
+   },
     // custom New Items
     avt_container: {
         borderRadius: 5,
         width: 121.18,
         height: 101.64,
-        marginEnd: 10,
     },
     item: {
         flexDirection: 'row',
-        paddingBottom: 10,
+      
         paddingTop: 10,
     },
     txt_item: {
@@ -293,8 +305,20 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     btn_delete_wish: {
-        position:'absolute',
+        position: 'absolute',
         marginVertical: '48%',
         marginHorizontal: '8%',
-    }
+    },
+    scv_imgContainer2: {
+        backgroundColor: 'white',
+        padding: 5,
+        borderRadius: 5,
+        elevation: 1,
+        shadowOffset: { width: 20, height: 2 },
+        shadowOpacity: 0.4,
+        shadowRadius: 20,
+        shadowColor: '1px 3px 9px #F4AAB9',
+        marginEnd: 10,
+    
+      },
 })
