@@ -101,12 +101,10 @@ const styles = StyleSheet.create({
     },
     // custom tilte
     txt_tilte: {
-        fontSize: 28,
+        fontSize: 25,
         lineHeight: 85,
-        fontWeight: '700',
-        fontFamily: 'raleway',
-        color: '#202020',
-        letterspacing: -0.28,
+        fontFamily:'Raleway-Bold',
+        color: '#202020',  
     },
     txt_tilte_xs_2:{
         paddingBottom: '8%',
@@ -129,18 +127,14 @@ const styles = StyleSheet.create({
         color:'black'
     },
     txt_tilte_s: {
-        fontSize: 16,
-        fontWeight: '750',
+        fontSize: 15,
         fontFamily: 'raleway',
         color: '#202020',
-        
         paddingBottom: '4%',
         textAlignVertical:'center',
     },
     txt_tilte_m_2: {
         fontSize: 20,
-        fontWeight: '900',
-        
         fontFamily: 'raleway',
         color: '#202020',
       
