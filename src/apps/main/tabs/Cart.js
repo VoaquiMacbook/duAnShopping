@@ -31,7 +31,7 @@ const Cart = () => {
   // dữ liệu mẫu testing
   const USERSWish = [{
     "id": 1,
-    "name": "Sonsing",
+    "name": "Ronstring",
     "email": "csturte0@barnesandnoble.com",
     "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423480138_1622771141797102_8678712648772560882_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=B7-TEvqJLDoAX8uqEXU&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC1YpvPxJk90zvBYmL8TnxCxoYzNLZGVMt43oW0Am_tMQ&oe=65BB1C20",
     "postion": "Research Associate",
