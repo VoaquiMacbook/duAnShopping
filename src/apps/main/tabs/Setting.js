@@ -2,12 +2,16 @@ import { View, Text, FlatList, SafeAreaView, StyleSheet, ScrollView, TouchableOp
 import React from 'react'
 
 const Setting = (props) => {
+    const { navigation } = props;
+    const profile = () => {
+        navigation.navigate('Profile')
+    };
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Text style={styles.txt_tilte}>Settings</Text>
                 <Text style={styles.txt_tilte_m}>Personal</Text>
-                <TouchableOpacity style={styles.horizontal}>
+                <TouchableOpacity style={styles.horizontal} onPress={profile}>
                     <Text style={[styles.txt_tilte_s, styles.flex]}>Profile</Text>
                     <Image style={styles.ic_right} source={require('../../../../assets/image/ic_right2.png')} />
                 </TouchableOpacity>

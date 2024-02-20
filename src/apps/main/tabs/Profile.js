@@ -14,6 +14,9 @@ const Profile = (props) => {
     const setting = () => {
         navigation.navigate('Setting')
     };
+    const detail = () => {
+        navigation.navigate('Detail')
+    };
     const USERS = [{
         "id": 1,
         "name": "Sonsing",
@@ -104,7 +107,7 @@ const Profile = (props) => {
     const renderItem = ({ item }) => (
         <View style={styles.item}>
             <View >
-                <TouchableOpacity style={[styles.scv_imgContainer2]}>
+                <TouchableOpacity style={[styles.scv_imgContainer2]} onPress={detail}>
                     <Image
                         style={styles.img_container}
                         source={{ uri: item.photo }} />
@@ -251,11 +254,11 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginEnd: '3%',
         paddingStart: '1.4%',
-        elevation: 2,
+        // elevation: 2,
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.3,
         shadowRadius: 4,
-        shadowColor: '1px 2px 9px #F4AAB9',
+        // shadowColor: '1px 2px 9px #F4AAB9',
     },
     btn_avt: {
         backgroundColor: 'white',
