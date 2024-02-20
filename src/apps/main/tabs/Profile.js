@@ -4,13 +4,16 @@ import {
     TouchableOpacity, ScrollView,
     SafeAreaView, FlatList
 } from 'react-native'
-import React from 'react'
-import { useNavigation } from '@react-navigation/native';
+import React, {useState, useContext} from 'react'
 
-const Profile = () => {
+const Profile = (props) => {
+    const { navigation } = props;
     // const navigation = useNavigation();
     // const navigation = useNavigation();
     // dữ liệu mẫu testing
+    const setting = () => {
+        navigation.navigate('Setting')
+    };
     const USERS = [{
         "id": 1,
         "name": "Sonsing",
@@ -142,7 +145,7 @@ const Profile = () => {
                             </TouchableOpacity>
                         </View>
                         <View>
-                            <TouchableOpacity style={styles.btn_icon}>
+                            <TouchableOpacity style={styles.btn_icon} onPress={setting}>
                                 <Image style={styles.cs_icon_setting} source={require('../../../../assets/image/ic_setting.png')}></Image>
                             </TouchableOpacity>
                         </View>

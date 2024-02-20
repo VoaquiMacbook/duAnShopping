@@ -1,7 +1,7 @@
 import { View, Text, FlatList, SafeAreaView, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 
-const Setting = () => {
+const Setting = (props) => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={false}>

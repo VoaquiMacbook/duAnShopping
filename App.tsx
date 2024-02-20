@@ -24,6 +24,7 @@ import Profile from './src/apps/main/tabs/Profile';
 import Wishlist from './src/apps/main/tabs/Wishlist';
 import Cart from './src/apps/main/tabs/Cart';
 import Setting from './src/apps/main/tabs/Setting';
+import StackNavigatorMain from './src/voaqui/StackNavigatorMain';
 
 
 
@@ -33,9 +34,10 @@ function App(): React.JSX.Element {
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" backgroundColor="white" />
       {/* <Cart /> */}
-      <Profile/>
+      {/* <Profile/> */}
       {/* <Wishlist/> */}
       {/* <Setting /> */}
+      <StackNavigatorMain/>
     </SafeAreaView>
   );
 }
