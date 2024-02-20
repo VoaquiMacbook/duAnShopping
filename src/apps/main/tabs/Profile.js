@@ -152,8 +152,8 @@ const Profile = () => {
                         <View style={styles.horizontal}>
                             <Text style={[styles.txt_thongbaoS, styles.flex]}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit luctus libero ac vulputate.</Text>
-                            <TouchableOpacity style={styles.btn_seeall}>
-                                <Image source={require('../../../../assets/image/ic_seemess.png')}></Image>
+                            <TouchableOpacity style={styles.btn_seeThongbao}>
+                                <Image style={{ width: 30, height: 30, }} source={require('../../../../assets/image/ic_seemess.png')}></Image>
                             </TouchableOpacity>
                         </View>
                     </TouchableOpacity>
@@ -224,7 +224,7 @@ const styles = StyleSheet.create({
     // container
     container: {
         paddingStart: '3%',
-        paddingEnd: '3%',
+        paddingEnd: '5%',
         marginTop: '5%'
     },
     // cloumn
@@ -306,7 +306,7 @@ const styles = StyleSheet.create({
     txt_tilte: {
         fontSize: 28,
         lineHeight: 70,
-        fontFamily:'Raleway-Bold',
+        fontFamily: 'Raleway-Bold',
         color: '#202020',
     },
     // custom thongBao
@@ -334,7 +334,7 @@ const styles = StyleSheet.create({
     txt_tilte_rv: {
         fontSize: 21,
         lineHeight: 30,
-        fontFamily:'Raleway-Bold',
+        fontFamily: 'Raleway-Bold',
         color: 'black',
     },
     // custom scrollView
@@ -377,7 +377,7 @@ const styles = StyleSheet.create({
     },
     // custom MyOrder
     txt_or: {
-        fontFamily:'Raleway-Bold',
+        fontFamily: 'Raleway-Bold',
         fontSize: 18, marginTop: '5%',
         color: 'black',
     },
@@ -400,33 +400,47 @@ const styles = StyleSheet.create({
         fontSize: 15,
         paddingTop: '1%',
         color: 'black',
-        fontFamily:'Raleway-Bold'
+        fontFamily: 'Raleway-Bold'
     },
     horizontal_seeall: {
         flexDirection: 'row',
         marginTop: 20,
     },
     txt_newItems: {
-        fontFamily:'Raleway-Bold',
+        fontFamily: 'Raleway-Bold',
         fontSize: 20,
         color: 'black'
     },
     btn_seeall: {
         marginStart: 10,
-        shadowOpacity: 0.3,
-        shadowRadius: 0,
-        width: '10%',
+        width: 31,
+        height: 31,
         marginEnd: '3%',
-
+        backgroundColor: 'black',
+        borderRadius: 50,
+        alignSelf: 'center',
+        paddingStart: 0.5,
+        paddingTop: 0.5,
     },
-    // custom New Items
+    btn_seeThongbao: {
+        marginStart: 10,
+        width: 31,
+        height: 31,
+        marginEnd: '3%',
+        backgroundColor: 'black',
+        borderRadius: 50,
+        alignSelf: 'center',
+        paddingStart: 0.5,
+        paddingTop: 0.5,
+    },
+    // custom New Items`
     avt_container: {
         borderRadius: 10,
     },
     img_container: {
         width: 120,
         height: 120,
-        borderRadius:5,
+        borderRadius: 5,
     },
     item: {
         flexDirection: 'column',
@@ -449,7 +463,7 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         height: 30,
-        marginTop:3,
+        marginTop: 3,
     }
 
 

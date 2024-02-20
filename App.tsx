@@ -32,8 +32,8 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" backgroundColor="white" />
-      <Cart />
-      {/* <Profile/> */}
+      {/* <Cart /> */}
+      <Profile/>
       {/* <Wishlist/> */}
       {/* <Setting /> */}
     </SafeAreaView>
