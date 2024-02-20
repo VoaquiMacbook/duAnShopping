@@ -5,8 +5,11 @@ import {
     SafeAreaView, FlatList
 } from 'react-native'
 import React from 'react'
-const Profile = () => {
+import { useNavigation } from '@react-navigation/native';
 
+const Profile = () => {
+    // const navigation = useNavigation();
+    // const navigation = useNavigation();
     // dữ liệu mẫu testing
     const USERS = [{
         "id": 1,
