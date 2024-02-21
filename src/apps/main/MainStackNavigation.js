@@ -1,4 +1,5 @@
-import React from 'react'
+import React , { useContext } from 'react'
+import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity, FlatList ,ImageBackground} from 'react-native'
 // tabs
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Home from './tabs/Home'
