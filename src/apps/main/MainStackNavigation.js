@@ -36,21 +36,22 @@ const MainTabNavigation = (props) => {
                             return <Image source={require('../../../assets/image/shopblack.png')} />
                         }
                         return <Image source={require('../../../assets/image/shopblue.png')} />
-                    } else if (route.name === 'History') {
+                    }  else if (route.name === 'wish') {
                         if (focused) {
-                            return <Image source={require('../../../assets/image/hahaha.png')} />
-                        }
-                        return <Image source={require('../../../assets/image/hahaha.png')} />
-                    } else if (route.name === 'Favorite') {
-                        if (focused) {
-                            return <Image source={require('../../../assets/image/hahaha.png')} />
+                            return <Image source={require('../../../assets/image/likeB.png')} />
                         }
                         return <Image source={require('../../../assets/image/hahaha.png')} />
                     } else if (route.name === 'Cart') {
                         if (focused) {
-                            return <Image source={require('../../../assets/image/hahaha.png')} />
+                            return <Image source={require('../../../assets/image/cartB.png')} />
                         }
-                        return <Image source={require('../../../assets/image/hahaha.png')} />
+                        return <Image source={require('../../../assets/image/cart.png')} />
+                    }
+                    else if (route.name === 'Profile') {
+                        if (focused) {
+                            return <Image source={require('../../../assets/image/perB.png')} />
+                        }
+                        return <Image source={require('../../../assets/image/per.png')} />
                     }
 
 
@@ -84,6 +85,7 @@ const MainStackNavigation = (props) => {
             <Stack.Screen name="MainTabNavigation" component={MainTabNavigation} />
             <Stack.Screen name="Detail" component={Detail} />
             <Stack.Screen name="Setting" component={Setting} />
+            <Stack.Screen name="Search" component={Search} />
 
         </Stack.Navigator>
     )
