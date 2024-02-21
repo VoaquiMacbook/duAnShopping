@@ -33,7 +33,7 @@ const MainTabNavigation = (props) => {
 
                     if (route.name === 'Home') {
                         if (focused) {
-                            return <Image source={require('../../../assets/image/shopblue.png')} />
+                            return <Image source={require('../../../assets/image/shopblack.png')} />
                         }
                         return <Image source={require('../../../assets/image/shopblue.png')} />
                     } else if (route.name === 'History') {
