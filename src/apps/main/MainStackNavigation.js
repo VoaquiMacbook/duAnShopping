@@ -21,25 +21,11 @@ const MainTabNavigation = (props) => {
         <Tab.Navigator
 
             screenOptions={({ route, navigation }) => ({
-                headerLeft: () => (
-                    <TouchableOpacity onPress={goToSetting} style={styles.btnSettingCon}>
-                        <ImageBackground style={styles.backgroundColorSettingicon} source={require('../../../assets/image/hahaha.png')}>
-                            <Image style={styles.settingHome} source={require('../../../assets/image/hahaha.png')} />
 
-                        </ImageBackground>
-                    </TouchableOpacity>
-                ),
-                headerRight: () => (
-                    <TouchableOpacity onPress={goToPeronal}>
-
-                        <Image style={styles.avata} source={require('../../../assets/image/hahaha.png')} />
-                    </TouchableOpacity>
-                ),
-
-                headerStyle: { backgroundColor: '#0C0F14' },
-                headerShadowVisible: false,
+            
+              
                 headerTitle: () => null,
-                headerShown: true,
+                headerShown: false,
                 tabBarStyle: { backgroundColor: '#0C0F14', borderTopWidth: 0 },
                 tabBarIcon: ({ focused, color, size }) => {
 
