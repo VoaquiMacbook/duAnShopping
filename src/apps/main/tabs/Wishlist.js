@@ -71,7 +71,7 @@ const Wishlist = () => {
         "photo": "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/428277596_1635941687146714_8900359495859420354_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=ijQHmKzx7DgAX9ir27J&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfDcmsrq9OjViY5qNkXFbPZzeO79eYppe0UGbcq_G6vLBw&oe=65D78A54",
         "postion": "Research Nurse",
         "rice": "$7.73"
-    },{
+    }, {
         "id": 10,
         "name": "Sonsing",
         "email": "csturte0@barnesandnoble.com",
@@ -198,6 +198,7 @@ const Wishlist = () => {
                     data={USERS}
                     keyExtractor={(item) => item.id.toString()}
                     renderItem={renderItem}
+                    style={{ marginBottom: 60 }}
                 />
             </View>
         </View>
@@ -247,44 +248,44 @@ const styles = StyleSheet.create({
         color: 'black',
         fontFamily: 'Raleway-Bold',
     },
-   // custom scrollView
-   scrollView: {
+    // custom scrollView
+    scrollView: {
+        padding: 5
+    },
+    text: {
+        fontSize: 42,
+    },
+    scv_btn: {
+        marginEnd: 10,
+        elevation: 2,
 
-   },
-   text: {
-       fontSize: 42,
-   },
-   scv_btn: {
-       marginEnd: 10,
-       elevation: 2,
+    },
+    scv_img: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
 
-   },
-   scv_img: {
-       width: 50,
-       height: 50,
-       borderRadius: 25,
+    },
+    scv_imgContainer: {
+        backgroundColor: 'white',
+        width: 60,
+        height: 60,
+        borderRadius: 100,
+        justifyContent: 'center',
+        paddingStart: '1.3%',
 
-   },
-   scv_imgContainer: {
-       backgroundColor: 'white',
-       width: 60,
-       height: 60,
-       borderRadius: 100,
-       justifyContent: 'center',
-       paddingStart: '1.3%',
+    },
+    scv_imgContainer2: {
+        backgroundColor: 'white',
+        padding: 5,
+        borderRadius: 5,
+        elevation: 1,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        shadowColor: '1px 3px 9px #F4AAB9',
 
-   },
-   scv_imgContainer2: {
-       backgroundColor: 'white',
-       padding: 5,
-       borderRadius: 5,
-       elevation: 1,
-       shadowOffset: { width: 0, height: 2 },
-       shadowOpacity: 0.3,
-       shadowRadius: 4,
-       shadowColor: '1px 3px 9px #F4AAB9',
-
-   },
+    },
     // custom New Items
     avt_container: {
         borderRadius: 5,
@@ -293,7 +294,6 @@ const styles = StyleSheet.create({
     },
     item: {
         flexDirection: 'row',
-      
         paddingTop: 10,
     },
     txt_item: {
@@ -341,6 +341,6 @@ const styles = StyleSheet.create({
         shadowRadius: 20,
         shadowColor: '1px 3px 9px #F4AAB9',
         marginEnd: 10,
-    
-      },
+
+    },
 })
