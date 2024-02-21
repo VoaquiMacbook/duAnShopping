@@ -25,7 +25,7 @@ import Wishlist from './src/apps/main/tabs/Wishlist';
 import Cart from './src/apps/main/tabs/Cart';
 import Setting from './src/apps/main/tabs/Setting';
 import StackNavigatorMain from './src/voaqui/StackNavigatorMain';
-
+import AppNavigation from './src/apps/AppNavigation';
 
 
 function App(): React.JSX.Element {
@@ -37,7 +37,7 @@ function App(): React.JSX.Element {
       {/* <Profile/> */}
       {/* <Wishlist/> */}
       {/* <Setting /> */}
-      <StackNavigatorMain/>
+      <AppNavigation/>
     </SafeAreaView>
   );
 }
