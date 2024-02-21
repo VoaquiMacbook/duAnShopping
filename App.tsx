@@ -24,13 +24,13 @@ import Profile from './src/apps/main/tabs/Profile';
 import Wishlist from './src/apps/main/tabs/Wishlist';
 import Cart from './src/apps/main/tabs/Cart';
 
-
+import AppNavigation from './src/apps/AppNavigation';
 
 function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={{flex:1}}>
-    <Detail/>
+    <AppNavigation/>
     </SafeAreaView>
   );
 }
