@@ -26,6 +26,7 @@ import Cart from './src/apps/main/tabs/Cart';
 import Setting from './src/apps/main/tabs/Setting';
 import StackNavigatorMain from './src/voaqui/StackNavigatorMain';
 import AppNavigation from './src/apps/AppNavigation';
+import Bai1_onTap from './src/voaqui/Bai1_onTap';
 
 
 function App(): React.JSX.Element {
@@ -38,6 +39,7 @@ function App(): React.JSX.Element {
       {/* <Wishlist/> */}
       {/* <Setting /> */}
       <AppNavigation/>
+      {/* <Bai1_onTap/> */}
     </SafeAreaView>
   );
 }
