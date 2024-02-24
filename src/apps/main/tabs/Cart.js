@@ -6,64 +6,157 @@ import React, { useState } from 'react'
 
 const Cart = () => {
   // dữ liệu mẫu testing
+  // const USERS = [{
+  //   "id": 1,
+  //   "name": "Sonsing",
+  //   "email": "csturte0@barnesandnoble.com",
+  //   "photo": "https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/428282041_1635981393809410_2758062445062834597_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=yQur5_SYAgUAX9Q28WV&_nc_oc=AQm5U5wTsjP4A9KcJJnEDWIkvtH8rJ8yBIdM9O4Mfc2YrkD43zaKRLjXn3pHaKjnFRQ&_nc_ht=scontent.fsgn2-10.fna&oh=00_AfASLC16HndgoXZGdPTE95CEedRtuWIrIiMhSCY79oD_CQ&oe=65D6CD4E",
+  //   "postion": "Research Associate",
+  //   "rice": "$7.30"
+  // }, {
+  //   "id": 2,
+  //   "name": "Ronstring",
+  //   "email": "lfeatherstone1@com.com",
+  //   "photo": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/428457185_1635981313809418_3026649841359181726_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pqMSR6HmjOcAX8xgUre&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfB6pSp5AXVICQLO7rp24UZseuqvL4zfrX7fXfZGd-_gqg&oe=65D6C2E5",
+  //   "postion": "Administrative Assistant III",
+  //   "rice": "$9.17"
+  // }, {
+  //   "id": 3,
+  //   "name": "Tempsoft",
+  //   "email": "qpenright2@samsung.com",
+  //   "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
+  //   "postion": "Senior Sales Associate",
+  //   "rice": "$5.74"
+  // }]
   const USERS = [{
     "id": 1,
-    "name": "Sonsing",
-    "email": "csturte0@barnesandnoble.com",
-    "photo": "https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/428282041_1635981393809410_2758062445062834597_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=yQur5_SYAgUAX9Q28WV&_nc_oc=AQm5U5wTsjP4A9KcJJnEDWIkvtH8rJ8yBIdM9O4Mfc2YrkD43zaKRLjXn3pHaKjnFRQ&_nc_ht=scontent.fsgn2-10.fna&oh=00_AfASLC16HndgoXZGdPTE95CEedRtuWIrIiMhSCY79oD_CQ&oe=65D6CD4E",
-    "postion": "Research Associate",
-    "rice": "$7.30"
-  }, {
-    "id": 2,
     "name": "Ronstring",
     "email": "lfeatherstone1@com.com",
-    "photo": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/428457185_1635981313809418_3026649841359181726_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pqMSR6HmjOcAX8xgUre&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfB6pSp5AXVICQLO7rp24UZseuqvL4zfrX7fXfZGd-_gqg&oe=65D6C2E5",
     "postion": "Administrative Assistant III",
-    "rice": "$9.17"
-  }, {
-    "id": 3,
+    "photo": require("../../../../assets/image/img_Rv1.png"),
+    "rice": "$7.30",
+  },
+  {
+    "id": 2,
     "name": "Tempsoft",
     "email": "qpenright2@samsung.com",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423538209_1622755318465351_1230407908410425052_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=aQit8qaysnsAX_o9W6T&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAoIKG07gguymuZeQaXvteGTrls7eKO8g9GGr1Yg7ZC_w&oe=65BB9AC8",
-    "postion": "Senior Sales Associate",
-    "rice": "$5.74"
-  }]
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/purpleDetail.png"),
+    "rice": "$7.30",
+  },
+  {
+    "id": 3,
+    "name": "Ronstring",
+    "email": "lfeatherstone1@com.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/img_Rv3.png")
+  },
+  {
+    "id": 4,
+    "name": "Ronstring",
+    "email": "lfeatherstone1@com.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/img_Rv4.png")
+  },
+  {
+    "id": 5,
+    "name": "Ronstring",
+    "email": "lfeatherstone1@com.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/img_Rv5.png")
+  },
+  {
+    "id": 6,
+    "name": "Ronstring",
+    "email": "lfeatherstone1@com.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/img_Rv2.png")
+  },
+  ]
   // dữ liệu mẫu testing
+  // const USERSWish = [{
+  //   "id": 1,
+  //   "name": "Ronstring",
+  //   "email": "csturte0@barnesandnoble.com",
+  //   "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423480138_1622771141797102_8678712648772560882_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=B7-TEvqJLDoAX8uqEXU&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC1YpvPxJk90zvBYmL8TnxCxoYzNLZGVMt43oW0Am_tMQ&oe=65BB1C20",
+  //   "postion": "Research Associate",
+  //   "rice": "$7.30"
+  // }, {
+  //   "id": 2,
+  //   "name": "Ronstring",
+  //   "email": "lfeatherstone1@com.com",
+  //   "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
+  //   "postion": "Administrative Assistant III",
+  //   "rice": "$9.17"
+  // }, {
+  //   "id": 3,
+  //   "name": "Zontrax",
+  //   "email": "astirman3@ox.ac.uk",
+  //   "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
+  //   "postion": "Librarian",
+  //   "rice": "$0.34"
+  // }, {
+  //   "id": 4,
+  //   "name": "Span",
+  //   "email": "dsterley4@wp.com",
+  //   "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
+  //   "postion": "Product Engineer",
+  //   "rice": "$8.99"
+  // }]
+
   const USERSWish = [{
     "id": 1,
     "name": "Ronstring",
-    "email": "csturte0@barnesandnoble.com",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423480138_1622771141797102_8678712648772560882_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=B7-TEvqJLDoAX8uqEXU&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC1YpvPxJk90zvBYmL8TnxCxoYzNLZGVMt43oW0Am_tMQ&oe=65BB1C20",
-    "postion": "Research Associate",
-    "rice": "$7.30"
-  }, {
+    "email": "lfeatherstone1@com.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/img_Rv1.png"),
+    "rice": "$7.30",
+  },
+  {
     "id": 2,
+    "name": "Tempsoft",
+    "email": "qpenright2@samsung.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/purpleDetail.png"),
+    "rice": "$7.30",
+  },
+  {
+    "id": 3,
     "name": "Ronstring",
     "email": "lfeatherstone1@com.com",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423557520_1622755321798684_1431897259310686444_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=LFO9cS_grUMAX-dvb7-&_nc_oc=AQkoKT9RyDjMnbUhlSrx55dWYheWUq7pFOVHvQqovGI_tIPHtZ7L17CQYPHE5Xs8QM8&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDKLwm5xZWFfJ4TTIAbrL3MC2pChCz592SGAS6iRQgWHQ&oe=65BB2995",
     "postion": "Administrative Assistant III",
-    "rice": "$9.17"
-  }, {
-    "id": 3,
-    "name": "Zontrax",
-    "email": "astirman3@ox.ac.uk",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423515722_1622755395132010_8741546126443131823_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FgWHg8ohtjEAX_PAVWK&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfDXmSqpIQbMm1rqfkhiP1O8f11HIeHLyoK1F8fxjCi9aw&oe=65BA491B",
-    "postion": "Librarian",
-    "rice": "$0.34"
-  }, {
+    "photo": require("../../../../assets/image/img_Rv3.png")
+  },
+  {
     "id": 4,
-    "name": "Span",
-    "email": "dsterley4@wp.com",
-    "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/423584529_1622755408465342_7305113225419697574_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EbgGg47ouDEAX9ojl2Y&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfC6_pRObxWAwp_MFCd0XdhepgGVBxi_bCoYAKECubwGuQ&oe=65BB58C5",
-    "postion": "Product Engineer",
-    "rice": "$8.99"
-  }]
+    "name": "Ronstring",
+    "email": "lfeatherstone1@com.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/img_Rv4.png")
+  },
+  {
+    "id": 5,
+    "name": "Ronstring",
+    "email": "lfeatherstone1@com.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/img_Rv5.png")
+  },
+  {
+    "id": 6,
+    "name": "Ronstring",
+    "email": "lfeatherstone1@com.com",
+    "postion": "Administrative Assistant III",
+    "photo": require("../../../../assets/image/img_Rv2.png")
+  },
+  ]
   const renderItemWish = ({ item }) => (
     <View style={styles.item}>
       <TouchableOpacity style={[styles.scv_imgContainer2]}>
         <Image
           style={styles.avt_container}
-          source={{ uri: item.photo }} />
+          // source={{ uri: item.photo }}     
+          source={item.photo}
+          />
         <TouchableOpacity style={styles.btn_delete_wish}>
           <Image source={require('../../../../assets/image/ic_delete_wish.png')} />
         </TouchableOpacity>
@@ -84,7 +177,7 @@ const Cart = () => {
           </View>
           <View style={{ flex: 1, marginHorizontal: '25%' }}>
             <TouchableOpacity>
-              <Image style={{width:25,height:20}} source={require('../../../../assets/image/ic_Add_wish.png')} />
+              <Image style={{ width: 25, height: 20 }} source={require('../../../../assets/image/ic_Add_wish.png')} />
             </TouchableOpacity>
           </View>
         </View>
@@ -96,7 +189,7 @@ const Cart = () => {
       <TouchableOpacity style={[styles.scv_imgContainer2]}>
         <Image
           style={styles.avt_container}
-          source={{ uri: item.photo }} />
+          source={item.photo} />
         <TouchableOpacity style={styles.btn_delete_wish}>
           <Image source={require('../../../../assets/image/ic_delete_wish.png')} />
         </TouchableOpacity>
@@ -117,11 +210,11 @@ const Cart = () => {
           <View style={{ marginHorizontal: '24%' }}>
             <View style={styles.horizontal_iconUD}>
               <TouchableOpacity>
-                <Image style={{width:25,height:25}} source={require('../../../../assets/image/ic_down.png')} />
+                <Image style={{ width: 25, height: 25 }} source={require('../../../../assets/image/ic_down.png')} />
               </TouchableOpacity>
-              <Image style={{ width: 35, height: 30, marginEnd: 5, marginStart: 5, borderRadius:8, }} source={require('../../../../assets/image/img_number1.png')} />
+              <Image style={{ width: 35, height: 30, marginEnd: 5, marginStart: 5, borderRadius: 8, }} source={require('../../../../assets/image/img_number1.png')} />
               <TouchableOpacity>
-                <Image style={{width:25,height:25}} source={require('../../../../assets/image/ic_up.png')} />
+                <Image style={{ width: 25, height: 25 }} source={require('../../../../assets/image/ic_up.png')} />
               </TouchableOpacity>
             </View>
           </View>
@@ -150,31 +243,31 @@ const Cart = () => {
             </TouchableOpacity>
           </View>
         </TouchableOpacity>
-        <ScrollView>
 
+        <View style={styles.scrollViewContainer}>
+          <FlatList
+            horizontal={false}
+            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}
+            data={USERS}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={renderItem}
 
+          />
           <View>
-            <FlatList
-              horizontal={false}
-              showsVerticalScrollIndicator={false}
-              showsHorizontalScrollIndicator={false}
-              data={USERS}
-              keyExtractor={(item) => item.id.toString()}
-              renderItem={renderItem}
-            />
+            <Text style={styles.txt_tilte}>From Your Wishlist</Text>
           </View>
-          <Text style={styles.txt_tilte}>From Your Wishlist</Text>
-          <View>
-            <FlatList
-              horizontal={false}
-              showsVerticalScrollIndicator={false}
-              showsHorizontalScrollIndicator={false}
-              data={USERSWish}
-              keyExtractor={(item) => item.id.toString()}
-              renderItem={renderItemWish}
-            />
-          </View>
-        </ScrollView>
+          <FlatList
+            horizontal={false}
+            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}
+            data={USERSWish}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={renderItemWish}
+            style={{ height: '60%' }}
+          />
+        </View>
+
 
       </View>
       <View style={[styles.horizontal_Total]}>
@@ -208,7 +301,7 @@ const styles = StyleSheet.create({
     padding: 10,
     position: 'absolute',
     width: '100%',
-    marginVertical: '170%'
+    marginVertical: '145%'
   },
   txt_Total: {
     fontSize: 18,
@@ -218,8 +311,9 @@ const styles = StyleSheet.create({
   btn_Total: {
     marginStart: 10,
     marginEnd: 5,
-    shadowOpacity: 40,
-    width: 127,
+    shadowOpacity: 0.2,
+    shadowRadius:1,
+    width: '35%',
     height: 40,
     backgroundColor: '#004CFF',
     borderRadius: 11,
@@ -235,18 +329,20 @@ const styles = StyleSheet.create({
   // custom tilte
   txt_tilte: {
     fontSize: 20,
-    fontFamily:'Raleway-Bold',
+    fontFamily: 'Raleway-Bold',
     color: 'black',
     marginEnd: '2%',
+    paddingBottom: 10,
+    paddingTop: 10,
   },
   txt_tilte_container: {
-    marginTop: '5%',
     flexDirection: 'row',
     marginBottom: '3%',
     height: 30,
+    alignItems: 'center',
   },
   btn_number: {
-    marginTop: 3,
+    marginTop: 5,
   },
   // cloumn, row
   vertical: {
@@ -255,9 +351,9 @@ const styles = StyleSheet.create({
   horizontal: {
     flexDirection: 'row',
   },
-  horizontal_iconUD:{
+  horizontal_iconUD: {
     flexDirection: 'row',
-    alignItems:'center',
+    alignItems: 'center',
   },
   // flex
   flex: {
@@ -280,10 +376,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Raleway-Bold',
   },
   // custom scrollView
-  scrollView: {
-    paddingEnd: '3%',
-    marginTop: '4%',
-    paddingBottom: '2%'
+  scrollViewContainer: {
+    flex: 1,
+    paddingBottom: '2%',
   },
   text: {
     fontSize: 42,
@@ -383,7 +478,8 @@ const styles = StyleSheet.create({
     paddingStart: 14,
     paddingTop: 10,
     marginBottom: 10,
-    shadowOpacity: 5,
+    shadowOpacity: 0.4,
+    shadowRadius: 4,
   },
   txt_thongbao: {
     fontWeight: 'bold',
@@ -399,14 +495,15 @@ const styles = StyleSheet.create({
   },
   scv_imgContainer2: {
     backgroundColor: 'white',
-    padding: 5,
+    padding: 4,
     borderRadius: 5,
     elevation: 1,
-    shadowOffset: { width: 20, height: 2 },
+    shadowOffset: { width: 0, height: 20 },
     shadowOpacity: 0.4,
     shadowRadius: 20,
     shadowColor: '1px 3px 9px #F4AAB9',
     marginEnd: 10,
+    marginStart: 5,
 
   },
 

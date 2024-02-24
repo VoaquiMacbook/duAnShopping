@@ -15,7 +15,6 @@ const StackNavigatorMain = () => {
       <Stack.Screen name="Setting" component={Setting} />
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Detail" component={Detail} />
-      
     </Stack.Navigator>
     </NavigationContainer>
     
