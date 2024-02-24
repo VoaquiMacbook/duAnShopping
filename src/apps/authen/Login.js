@@ -6,8 +6,11 @@ import {
 } from 'react-native'
 import React, { useState } from 'react'
 
-const Login = () => {
-
+const Login = (props) => {
+    const { navigation } = props;
+    const pass = () => {
+        navigation.navigate('Pass')
+    };
     return (
        
         <View style={styles.container}>
@@ -60,7 +63,7 @@ const Login = () => {
 
 
             <View style={styles.buttonGGContainer}>
-                <TouchableOpacity style={styles.buttonGG}>
+                <TouchableOpacity onPress={pass} style={styles.buttonGG}>
 
                     <Text style={styles.buttonGGLabel}
 

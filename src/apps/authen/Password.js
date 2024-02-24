@@ -3,9 +3,13 @@ import {
     TouchableOpacity
 } from 'react-native'
 import React, { useState } from 'react'
+import MainStackNavigation from '../main/MainStackNavigation';
 
-const Password = () => {
-
+const Password = (props) => {
+    const { navigation } = props;
+    const home = () => {
+        navigation.navigate('Main')
+    };
     return (
         <View style={styles.container}>
             <View style={styles.buttonimg}>
@@ -63,7 +67,14 @@ const Password = () => {
                 </View>
             </View>
 
+            <View style={styles.buttonGGContainer}>
+                <TouchableOpacity onPress={home} style={styles.buttonGG}>
 
+                    <Text style={styles.buttonGGLabel}
+
+                    >Next </Text>
+                </TouchableOpacity>
+            </View>
 
             <View style={styles.loginContainer1}>
                 <Text style={styles.login1}>Not you?  </Text>
@@ -78,17 +89,37 @@ const Password = () => {
 }
 export default Password
 const styles = StyleSheet.create({
+    buttonGGLabel: {
+        fontSize: 22,
+        fontStyle: 'normal',
+        fontWeight: '300',
+        lineHeight: 31,
+        letterSpacing: 0.5,
+        color: '#FFF',
+    },
+    buttonGG: {
+        width: '100%',
+        height: 57,
+        backgroundColor: '#004CFF',
+        borderRadius: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    buttonGGContainer: {
+        width: '100%',
+        marginTop: 35,
+    },
     vongtron: {
-        borderRadius:120,
-         borderWidth: 0.5,
-      paddingTop:'40%',
+        borderRadius: 120,
+        borderWidth: 0.5,
+        paddingTop: '40%',
         borderColor: 'gray',
-        alignItems:'center',
-       
-        backgroundColor:'#fff',
-        
-        
-          },
+        alignItems: 'center',
+
+        backgroundColor: '#fff',
+
+
+    },
     eyeIcon: {
         position: 'absolute',
         right: '35%',
@@ -254,7 +285,7 @@ const styles = StyleSheet.create({
         width: 106,
         height: 106,
         borderRadius: 50,
-        
+
         resizeMode: 'contain',
     },
 

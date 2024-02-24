@@ -3,9 +3,13 @@ import {
   TouchableOpacity
 } from 'react-native'
 import React, { useState } from 'react'
+import { start } from 'repl';
 
-const Start1 = () => {
-
+const Start1 = (props) => {
+  const { navigation } = props;
+  const start = () => {
+      navigation.navigate('Account')
+  };
   return (
     <View style={styles.container}>
       <View style={styles.buttonimg}>
@@ -35,7 +39,7 @@ const Start1 = () => {
 
 
       <View style={styles.buttonGGContainer}>
-        <TouchableOpacity style={styles.buttonGG}>
+        <TouchableOpacity onPress={start} style={styles.buttonGG}>
 
           <Text style={styles.buttonGGLabel}>Let's get started</Text>
         </TouchableOpacity>

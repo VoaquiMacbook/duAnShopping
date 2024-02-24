@@ -4,8 +4,11 @@ import {
 } from 'react-native'
 import React, { useState } from 'react'
 import Dropdown from './Dropdown'
-const Acccount = () => {
-   
+const Acccount = (props) => {
+    const { navigation } = props;
+    const login = () => {
+        navigation.navigate('Login')
+    };
     return (
         <View style={styles.container}>
             <View style={styles.buttonimg}>
@@ -72,7 +75,7 @@ const Acccount = () => {
 
 
             <View style={styles.buttonGGContainer}>
-                <TouchableOpacity style={styles.buttonGG}>
+                <TouchableOpacity onPress={login} style={styles.buttonGG}>
 
                     <Text style={styles.buttonGGLabel}
                       

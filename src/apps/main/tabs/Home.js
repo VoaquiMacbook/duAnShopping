@@ -1,8 +1,12 @@
 import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity, FlatList } from 'react-native'
 import React, { useState } from 'react'
 
-const Home = () => {
+const Home = (props) => {
+    const { navigation } = props;
     const [data, setdata] = useState(Product);
+    const Home = () => {
+        navigation.navigate('Search')
+    };
     const renderitem = ({ item }) => {
         const { id, infor, price, image } = item;
        
@@ -27,7 +31,7 @@ const Home = () => {
                     <TextInput style={styles.searchText} placeholder='Search'>
 
                     </TextInput>
-                    <TouchableOpacity><Image source={require('../../../../assets/image/camera.png')} /></TouchableOpacity>
+                    <TouchableOpacity onPress={Home}><Image source={require('../../../../assets/image/camera.png')} /></TouchableOpacity>
                 </View>
 
 
@@ -306,7 +310,7 @@ const styles = StyleSheet.create({
     {
         flexDirection: 'column',
         flex: 1,
-        paddingVertical: 20,
+        paddingTop: 20,
         paddingHorizontal: 13
     }
 })
