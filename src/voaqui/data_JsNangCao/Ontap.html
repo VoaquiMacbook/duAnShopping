@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- style , id, onclick là một method -->
+    <h1 style="" id="myH1" onclick=""></h1>
+    <h2 style="" id="myH2" onclick=""> </h2>
+</body>
+</html>
+<script>
+    let vH1 = document.querySelector("#myH1");
+    let vH2 = document.getElementById("myH2");
+    let vH3 = document.getElementsByTagName("h1");
+    vH1.innerText = "my text name";
+    vH1.style.color = "green";
+    vH2.innerText = "getElementsById";
+</script>

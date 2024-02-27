@@ -27,6 +27,10 @@ import Setting from './src/apps/main/tabs/Setting';
 import StackNavigatorMain from './src/voaqui/StackNavigatorMain';
 import AppNavigation from './src/apps/AppNavigation';
 import AuthenStackNavigation from './src/apps/authen/AuthenStackNavigation';
+// import kiemTra JsNangCao
+import JsNangcao_kt_01 from './src/voaqui/data_JsNangCao/JsNangcao_kt_01';
+import The_Function from './src/voaqui/data_JsNangCao/The_Function';
+import The_Object_Arr from './src/voaqui/data_JsNangCao/The_Object_Arr';
 
 function App(): React.JSX.Element {
 
@@ -37,7 +41,10 @@ function App(): React.JSX.Element {
       {/* <Profile/> */}
       {/* <Wishlist/> */}
       {/* <Setting /> */}
-      <AuthenStackNavigation />
+      {/* <AuthenStackNavigation /> */}
+      {/* <JsNangcao_kt_01/> */}
+      <The_Function/>
+      {/* <The_Object_Arr/> */}
     </SafeAreaView>
   );
 }
