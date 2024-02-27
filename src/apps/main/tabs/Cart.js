@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
     padding: 10,
     position: 'absolute',
     width: '100%',
-    marginVertical: '145%'
+    marginVertical: '170%'
   },
   txt_Total: {
     fontSize: 18,

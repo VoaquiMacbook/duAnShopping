@@ -75,7 +75,7 @@ const Wishlist = () => {
         "photo": require("../../../../assets/image/datapic4.jpg")
       },
       {
-        "id": 10,
+        "id": 10 ,
         "name": "Ronstring",
         "email": "lfeatherstone1@com.com",
         "postion": "Administrative Assistant III",
