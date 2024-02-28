@@ -31,7 +31,7 @@ import AuthenStackNavigation from './src/apps/authen/AuthenStackNavigation';
 import JsNangcao_kt_01 from './src/voaqui/data_JsNangCao/JsNangcao_kt_01';
 import The_Function from './src/voaqui/data_JsNangCao/The_Function';
 import The_Object_Arr from './src/voaqui/data_JsNangCao/The_Object_Arr';
-
+import Kt01_JsNangCao from './src/voaqui/data_JsNangCao/Kt01_JsNangCao';
 function App(): React.JSX.Element {
 
   return (
@@ -43,8 +43,9 @@ function App(): React.JSX.Element {
       {/* <Setting /> */}
       {/* <AuthenStackNavigation /> */}
       {/* <JsNangcao_kt_01/> */}
-      <The_Function/>
+      {/* <The_Function/> */}
       {/* <The_Object_Arr/> */}
+      <Kt01_JsNangCao/>
     </SafeAreaView>
   );
 }
