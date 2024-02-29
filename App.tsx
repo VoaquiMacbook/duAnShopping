@@ -32,7 +32,16 @@ import JsNangcao_kt_01 from './src/voaqui/data_JsNangCao/JsNangcao_kt_01';
 import The_Function from './src/voaqui/data_JsNangCao/The_Function';
 import The_Object_Arr from './src/voaqui/data_JsNangCao/The_Object_Arr';
 import Kt01_JsNangCao from './src/voaqui/data_JsNangCao/Kt01_JsNangCao';
+import Giai_De2 from './src/voaqui/data_JsNangCao/De_JsNangCao/Giai_De2';
+import Thi from './src/voaqui/data_JsNangCao/Thi/Thi';
+import C3 from './src/voaqui/data_JsNangCao/Thi/C3';
+import C4 from './src/voaqui/data_JsNangCao/Thi/C4';
+import C5 from './src/voaqui/data_JsNangCao/Thi/C5';
+import C6 from './src/voaqui/data_JsNangCao/Thi/C6';
+import C7 from './src/voaqui/data_JsNangCao/Thi/C7';
+import C8 from './src/voaqui/data_JsNangCao/Thi/C8';
 function App(): React.JSX.Element {
+
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -45,7 +54,10 @@ function App(): React.JSX.Element {
       {/* <JsNangcao_kt_01/> */}
       {/* <The_Function/> */}
       {/* <The_Object_Arr/> */}
-      <Kt01_JsNangCao/>
+      {/* <Kt01_JsNangCao/> */}
+      {/* <Giai_De2 /> */}
+      {/* <Thi/> */}
+    <C8/>
     </SafeAreaView>
   );
 }
