@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="wrap_content">
+      <RadioButton
+          android:layout_width="match_parent"
+          android:text="Chân trâu"
+          android:id="@+id/rdoTopping"
+          android:layout_height="wrap_content"/>
+      <View
+
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:background="@drawable/img_detail_strokenhat" />
+  </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

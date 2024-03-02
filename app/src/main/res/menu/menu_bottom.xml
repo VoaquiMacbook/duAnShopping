@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/order"
+        android:icon="@drawable/order"
+        android:title="____"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/cart"
+        android:title="____"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/history"
+        android:title="____"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/statistical"
+        android:icon="@drawable/statistical"
+        android:title="____"
+        app:showAsAction="ifRoom" />
+</menu>

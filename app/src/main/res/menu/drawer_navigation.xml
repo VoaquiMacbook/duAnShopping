@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/cartNavigation"
+        android:icon="@drawable/ic_cart_navigation"
+        android:title="Giỏ hàng" />
+    <item android:title=""/>
+    <item
+        android:id="@+id/historyNavigation"
+        android:icon="@drawable/ic_history_navigation"
+        android:title="Hoá đơn" />
+
+    <group android:checkableBehavior="single">
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/oderNavigation"
+                    android:icon="@drawable/ic_order_navigation"
+                    android:title="Order" />
+                <item android:title=""/>
+                <item
+                    android:id="@+id/statisticalNavigation"
+                    android:icon="@drawable/ic_statistical_navigation"
+                    android:title="Thống kê doanh thu" />
+
+            </menu>
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/logoutNavigation"
+                    android:icon="@drawable/ic_logout_navigation"
+                    android:title="Log out" />
+
+            </menu>
+
+        </item>
+    </group>
+
+</menu>

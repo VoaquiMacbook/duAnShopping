@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/tvNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="13/02/2004"
+            android:textColor="#FF5722"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/item">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvHisorySP"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <!-- your_layout.xml -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginVertical="2dp"
+                android:background="@drawable/history_gachgach" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:text="GHI CHÚ "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tvHistoryNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="9dp"
+                android:text="...."
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/item2"
+                android:inputType="textMultiLine"
+                android:lines="5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/tvHistoryNote"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/tvHDMahoadon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="NO.01"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvHDTongTien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40px"
+                    android:text="100.000"
+                    android:textSize="16dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
