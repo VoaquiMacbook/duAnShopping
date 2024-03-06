@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const test_react2 = () => {
+const Test_React2 = () => {
     return (
         <View style={styles.contaiter}>
             <View style={styles.v_center}>
@@ -40,7 +40,7 @@ const test_react2 = () => {
     )
 }
 
-export default test_react2
+export default Test_React2
 
 const styles = StyleSheet.create({
     contaiter: {

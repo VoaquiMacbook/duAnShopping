@@ -41,8 +41,8 @@ import C6 from './src/voaqui/data_JsNangCao/Thi/C6';
 import C7 from './src/voaqui/data_JsNangCao/Thi/C7';
 import C8 from './src/voaqui/data_JsNangCao/Thi/C8';
 // react 2
-import Test_React2 from './src/voaqui/daNenTang2/Test_React2';
 import HomePage from './src/voaqui/daNenTang2/HomePage';
+import Test_React2 from './src/voaqui/daNenTang2/test_react2';
 function App(): React.JSX.Element {
 
 
