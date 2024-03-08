@@ -63,7 +63,6 @@ const styles = StyleSheet.create({
         fontSize: 18, marginTop: '5%',
         color: 'black',
         marginStart: 20,
-
     },
     txt_or2: {
         fontSize: 14,
@@ -72,7 +71,6 @@ const styles = StyleSheet.create({
         marginStart: 28,
         fontWeight: 400,
         width: 267,
-
     },
     input: {
         height: 53,
