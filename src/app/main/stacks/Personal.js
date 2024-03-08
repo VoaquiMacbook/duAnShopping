@@ -41,7 +41,7 @@ const Personal = (props) => {
               autoCorrect={true}
               keyboardType="default"
             >
-              <Text>Nhựt đẹp trai</Text>
+              <Text>Võ A Qui</Text>
             </TextInput>
           </View>
           <View style={styles.inputContainer}>
@@ -54,7 +54,7 @@ const Personal = (props) => {
               autoCorrect={false}
               keyboardType="email-address"
             >
-              <Text>nhutchodiennguyen2306@gmail.com</Text>
+              <Text>vohqui51202@icloud.com</Text>
             </TextInput>
           </View>
 
