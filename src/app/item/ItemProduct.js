@@ -28,8 +28,6 @@ const ItemProduct = (props) => {
         Alert.alert('Thêm vào giỏ hàng thành công');
     };
 
-
-
     // const product = route.params?.data?.product;
     return (
 

@@ -1,7 +1,9 @@
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native'
 import React from 'react'
+import ItemProduct from './item/ItemProduct';
 
-const HomePage = () => {
+const HomePage = (props) => {
+    const { navigation } = props;
     const USERS = [{
         "id": 1,
         "name": "Sonsing",
@@ -110,14 +112,12 @@ const HomePage = () => {
     }]
     const renderItem = ({ item }) => (
         <View style={styles.item}>
-            <View >
-                <Image
-                    style={styles.avt_container}
-                    source={{ uri: item.photo }}/>
-            </View>
-        </View>
+        <ItemProduct
+        navigation={navigation} 
+        product={item} />
+      </View>
     );
-
+    
     return (
         <View style={styles.container}>
             <View style={styles.horizontal}>
@@ -138,6 +138,12 @@ const HomePage = () => {
                         data={USERS}
                         keyExtractor={(item) => item.id.toString()}
                         renderItem={renderItem}
+                        // renderItem={({item}) => (
+                        //     <ItemProduct
+                        //     navigation = {navigation}
+                        //     USERS={item}
+                        //     />
+                        // )}
                     />
                 </View>
         </View>

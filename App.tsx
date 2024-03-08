@@ -26,16 +26,29 @@ import C7 from './src/voaqui/data_JsNangCao/Thi/C7';
 import C8 from './src/voaqui/data_JsNangCao/Thi/C8';
 // react 2
 import HomePage from './src/voaqui/daNenTang2/HomePage';
-import Test_React2 from './src/voaqui/daNenTang2/test_react2';
+import Register from './src/voaqui/daNenTang2/Test_React2';
 import Login from './src/app/authen/Login';
+import Detail from './src/voaqui/daNenTang2/Detail';
+import AuthenStackNavigation from './src/voaqui/daNenTang2/authen/AuthenStackNavigation';
 function App(): React.JSX.Element {
   return (
+    // <AppProvider>
+    //   <SafeAreaView style={styles.container}>
+    //     <StatusBar />
+    //     <AppNavigation />
+    //   </SafeAreaView>
+    // </AppProvider>
     <AppProvider>
-      <SafeAreaView style={styles.container}>
-        <StatusBar />
-        <AppNavigation />
-      </SafeAreaView>
-    </AppProvider>
+    <SafeAreaView style={styles.container}>
+      <StatusBar />
+      {/* <AppNavigation /> */}
+      {/* <HomePage/> */}
+     {/* <Register/> */}
+     <AuthenStackNavigation/>
+     {/* <Detail/> */}
+    </SafeAreaView>
+  </AppProvider>
+    
   );
 }
 

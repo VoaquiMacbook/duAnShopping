@@ -1,7 +1,11 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const Test_React2 = () => {
+const Test_React2 = (props) => {
+    const { navigation } = props;
+    const next_HomePage = () => {
+        navigation.navigate('HomePage');
+      }
     return (
         <View style={styles.contaiter}>
             <View style={styles.v_center}>
@@ -27,7 +31,7 @@ const Test_React2 = () => {
                 <Text style={styles.orangeText}>Cookies Policy</Text>.
             </Text>
             <View style={styles.v_center}>           
-            <TouchableOpacity style={styles.btn_container}>
+            <TouchableOpacity style={styles.btn_container} onPress={next_HomePage}>
                 <Text style={styles.txt_myActivity}>Register</Text>
             </TouchableOpacity>
             </View>
