@@ -9,35 +9,35 @@ const HomePage = (props) => {
         "name": "Sonsing",
         "email": "csturte0@barnesandnoble.com",
         "photo": "https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/431656584_122093320502246377_4751893776583022215_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=f4GNssFgm10AX9UpbX2&_nc_ht=scontent.fhan3-1.fna&oh=00_AfA9uH7Yza3iKCsOjHR7-iE9pwUeLFCW7B1zqR0qgIlJEw&oe=65EE7ED9",
-        "postion": "Research Associate",
+        "postion": "Research Associate Research... ",
         "rice": "$7.30"
     }, {
         "id": 2,
         "name": "Ronstring",
         "email": "lfeatherstone1@com.com",
         "photo": "https://scontent.fhan4-3.fna.fbcdn.net/v/t39.30808-6/431319374_122093322050246377_4876689933606835524_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=f0CxBDjAU2QAX_ZM6kI&_nc_ht=scontent.fhan4-3.fna&oh=00_AfDamEjctRz7IIWG9UyNIN3ueruyZbdN5NRtjbmM1ZvrkQ&oe=65EE70C2",
-        "postion": "Administrative Assistant III",
+        "postion": "Administrative Assistant III...",
         "rice": "$9.17"
     }, {
         "id": 3,
         "name": "Tempsoft",
         "email": "qpenright2@samsung.com",
-        "photo": "http://dummyimage.com/238x100.png/5fa2dd/ffffff",
-        "postion": "Senior Sales Associate",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/431013703_122093926196246377_3311542746171054226_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=UAlse3HnF3EAX_E2WUV&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfD2ibTb4S1LG0zKWxJ-nG8Gxufb84F9Z82Rtta4N7Lyew&oe=65EF2365",
+        "postion": "Senior Sales Associate ... ",
         "rice": "$5.74"
     }, {
         "id": 4,
         "name": "Zontrax",
         "email": "astirman3@ox.ac.uk",
-        "photo": "http://dummyimage.com/250x100.png/ff4444/ffffff",
-        "postion": "Librarian",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/431652144_122093926154246377_3469493913244371697_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kA768RKR8VMAX_kqID6&_nc_oc=AQkXQFCZokdH4zRDM93Rg_NTt02z3JpNyNx1or7v9UmM-Z4ImCj6qpYKLMdOe49CtlE&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfAqhxWS9MULI2u0cgzFTsAPnQb4FU_PL6OQntTF25l3FQ&oe=65EF0979",
+        "postion": "Librarian Administrative...",
         "rice": "$0.34"
     }, {
         "id": 5,
         "name": "Span",
         "email": "dsterley4@wp.com",
-        "photo": "http://dummyimage.com/199x100.png/5fa2dd/ffffff",
-        "postion": "Product Engineer",
+        "photo": "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/431632203_122093926172246377_3891440330074203602_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=GRY7QIEIQU8AX_7KvjD&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfBeW5WDECFbG_xnoQiNqZbHOqIr9k-hvS_ibNdZ_rXO2w&oe=65F08054",
+        "postion": "Product Engineer...",
         "rice": "$8.99"
     }, {
         "id": 6,
@@ -133,6 +133,7 @@ const HomePage = (props) => {
                 <View>
                     <FlatList
                         horizontal={true}
+                        // numColumns={2}
                         showsVerticalScrollIndicator={false}
                         showsHorizontalScrollIndicator={false}
                         data={USERS}
