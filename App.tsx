@@ -50,14 +50,14 @@ function App(): React.JSX.Element {
       {/* <Profile/> */}
       {/* <Wishlist/> */}
       {/* <Setting /> */}
-      {/* <AuthenStackNavigation /> */}
+      <AuthenStackNavigation />
       {/* <JsNangcao_kt_01/> */}
       {/* <The_Function/> */}
       {/* <The_Object_Arr/> */}
       {/* <Kt01_JsNangCao/> */}
       {/* <Giai_De2 /> */}
       {/* <Thi/> */}
-    <C8/>
+    {/* <C8/> */}
     </SafeAreaView>
   );
 }
