@@ -6,6 +6,7 @@ INJECTED from /Volumes/hoc_tap/duAnShopping_AQui_5/android/app/src/debug/Android
 INJECTED from /Volumes/hoc_tap/duAnShopping_AQui_5/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 INJECTED from /Volumes/hoc_tap/duAnShopping_AQui_5/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:flipper-integration:0.73.2] /Users/voaqui/.gradle/caches/transforms-3/50aac7d389ae5d1436ebe9b90990835b/transformed/jetified-flipper-integration-0.73.2-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-gesture-handler] /Volumes/hoc_tap/duAnShopping_AQui_5/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-safe-area-context] /Volumes/hoc_tap/duAnShopping_AQui_5/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-screens] /Volumes/hoc_tap/duAnShopping_AQui_5/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.react:react-android:0.73.2] /Users/voaqui/.gradle/caches/transforms-3/d10d040f6dc36d35e250d48d5ebb15bd/transformed/jetified-react-android-0.73.2-debug/AndroidManifest.xml:2:1-24:12
@@ -176,6 +177,8 @@ INJECTED from /Volumes/hoc_tap/duAnShopping_AQui_5/android/app/src/debug/Android
 INJECTED from /Volumes/hoc_tap/duAnShopping_AQui_5/android/app/src/debug/AndroidManifest.xml
 MERGED from [com.facebook.react:flipper-integration:0.73.2] /Users/voaqui/.gradle/caches/transforms-3/50aac7d389ae5d1436ebe9b90990835b/transformed/jetified-flipper-integration-0.73.2-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:flipper-integration:0.73.2] /Users/voaqui/.gradle/caches/transforms-3/50aac7d389ae5d1436ebe9b90990835b/transformed/jetified-flipper-integration-0.73.2-debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-gesture-handler] /Volumes/hoc_tap/duAnShopping_AQui_5/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-gesture-handler] /Volumes/hoc_tap/duAnShopping_AQui_5/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] /Volumes/hoc_tap/duAnShopping_AQui_5/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] /Volumes/hoc_tap/duAnShopping_AQui_5/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] /Volumes/hoc_tap/duAnShopping_AQui_5/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
