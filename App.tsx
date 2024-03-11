@@ -30,14 +30,25 @@ import Register from './src/voaqui/daNenTang2/Test_React2';
 import Login from './src/app/authen/Login';
 import Detail from './src/voaqui/daNenTang2/Detail';
 import AuthenStackNavigation from './src/voaqui/daNenTang2/authen/AuthenStackNavigation';
+
+import Home from './src/Screens/Home';
+import ChooseLocation from './src/Screens/ChooseLocation';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+// import FlashMessage from 'react-native-flash-message';
+
 function App(): React.JSX.Element {
+  const Stack = createStackNavigator()
+
   return (
-    <AppProvider>
-      <SafeAreaView style={styles.container}>
-        <StatusBar />
-        <AppNavigation />
-      </SafeAreaView>
-    </AppProvider>
+    // <AppProvider>
+    //   <SafeAreaView style={styles.container}>
+    //     <StatusBar />
+    //     {/* <AppNavigation /> */}
+      
+    //   </SafeAreaView>
+    // </AppProvider>
+
   //   <AppProvider>
   //   <SafeAreaView style={styles.container}>
   //     <StatusBar />
@@ -48,6 +59,15 @@ function App(): React.JSX.Element {
   //    {/* <Detail/> */}
   //   </SafeAreaView>
   // </AppProvider>
+  <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="home" component={Home} />
+        <Stack.Screen name="chooseLocation" component={ChooseLocation} />
+      </Stack.Navigator>
+      {/* <FlashMessage
+        position="top"
+      /> */}
+    </NavigationContainer>
     
   );
 }
