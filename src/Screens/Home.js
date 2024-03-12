@@ -18,16 +18,17 @@ const Home = ({ navigation }) => {
 
     const [state, setState] = useState({
         curLoc: {
-            latitude: 30.7046,
-            longitude: 77.1025,
+
+            // latitude: 30.7046,
+            // longitude: 77.1025,
         },
         destinationCords: {},
         isLoading: false,
         coordinate: new AnimatedRegion({
-            latitude: 30.7046,
-            longitude: 77.1025,
-            latitudeDelta: LATITUDE_DELTA,
-            longitudeDelta: LONGITUDE_DELTA
+            // latitude: 30.7046,
+            // longitude: 77.1025,
+            // latitudeDelta: LATITUDE_DELTA,
+            // longitudeDelta: LONGITUDE_DELTA
         }),
         time: 0,
         distance: 0,
@@ -55,8 +56,8 @@ const Home = ({ navigation }) => {
                 coordinate: new AnimatedRegion({
                     latitude: latitude,
                     longitude: longitude,
-                    latitudeDelta: LATITUDE_DELTA,
-                    longitudeDelta: LONGITUDE_DELTA
+                    // latitudeDelta: LATITUDE_DELTA,
+                    // longitudeDelta: LONGITUDE_DELTA
                 })
             })
         }
